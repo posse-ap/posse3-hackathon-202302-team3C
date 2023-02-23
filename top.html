@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    pause: 3000,
+                });
+            });
+    </script>
+    
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +21,7 @@
   <title>POSSE</title>
   <!-- スタイルシート読み込み -->
   <link rel="stylesheet" href="./assets/styles/top.css">
+  <link rel="stylesheet" href="./assets/styles/normalize.css">
   <script src="./assets/scripts/top.js"></script>
   <script src= defer></script>
 </head>
@@ -20,7 +34,7 @@
       <nav class="p-header__nav">
         <ul class="p-header__nav__list">
           <li class="p-header__nav__item">
-            <a href="./profile.html" class="p-header__nav__item__link">自己紹介a</a>
+            <a href="./profile.html" class="p-header__nav__item__link">自己紹介aaa</a>
           </li>
           <li class="p-header__nav__item">
             <a href="./favorite.html" class="p-header__nav__item__link">好きなもの一覧</a>
@@ -32,6 +46,20 @@
 
   <main class="l-main">
     <section class="p-top-hero">
+        <div class="slider">
+            <img src="./assets/imgs/IMG_5418.JPG" width="600" height="900" alt="">
+            <img src="./assets/imgs/IMG_5409.JPG" width="600" height="900" alt="">
+            <img src="./assets/imgs/IMG_5411.JPG" width="600" height="900" alt="">
+            <img src="./assets/imgs/IMG_5419.JPG" width="600" height="900" alt="">
+            </div>
+        <div class="container">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showPrint=0&showTz=0&title=Harbars%E3%80%80%E3%81%8F%E3%82%8B%E6%97%A5&src=YjkwOTc3MzljZmYwODlkYWE4MTFkODRlYmU0YzZkODY0ZjE0ZDFmYjEzOTNlNmQ5ZjZkM2E2ODBjYjVjYTEyYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        
+        </div>
+            <div class="p-tappy">
+        <a href="http://tap-py.com/dgic8ot4" class="p-tappy">今月の予定</a>
+        </div>
+
       </section>
   </main>
 
