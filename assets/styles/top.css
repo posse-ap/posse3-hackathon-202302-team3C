@@ -1,3 +1,4 @@
+/*header*/
 .p-header {
     align-items: center;
     background-color: #fff;
@@ -11,4 +12,98 @@
     right: 0;
     top: 0;
     z-index: 1000;
+}
+.p-header__logo {
+    width: 148px;
+}
+
+.p-header__logo {
+    position: relative;
+    width: 120px;
+    z-index: 100;
+}
+img {
+    max-width: 100%;
+}
+.p-header__button {
+    display: none;
+}
+
+.p-header__button {
+    height: 40px;
+    position: fixed;
+    right: 19px;
+    top: 8px;
+    width: 40px;
+    z-index: 1000;
+}
+.p-header__inner {
+    align-items: center;
+    margin-left: auto;
+}
+
+.p-header__inner {
+    display: flex;
+}
+*, ::before, ::after {
+    border-style: solid;
+    border-width: 0;
+    box-sizing: border-box;
+}
+.p-header__nav__list {
+    gap: 32px;
+}
+.p-header__nav__list {
+    display: flex;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: list-item;
+}
+.p-header__nav__item__link {
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+.p-header__nav__item__link {
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+
+
+/*main*/
+.l-headercontainer {
+    
+}
+.p-tappy {
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*ftre*/
+.p-footer__copyright {
+    line-height: 1.5;
+    padding: 38px 24px 33px;
+    text-align: center;
+}
+.p-footer__copyright {
+    border-top: solid 1px #eee;
+    color: #666;
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+}
+small {
+    font-size: 80%;
 }
