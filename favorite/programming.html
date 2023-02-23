@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プログラミング</title>
+  <!-- <link rel="icon" href="../assets/favicon.ico" /> -->
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../assets/styles/favorite.css">
+  <link rel="stylesheet" href="../assets/styles/favorite_content_list.css">
+  <script src="../assets/scripts/favorite.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="p-body">
+  <nav class="navbar">
+    <a onclick="history.back(); return false;" href="#">
+      <img src="../assets/imgs/posse.png" alt="" class="back">
+    </a>
+    <div class="p-header__logo">
+      <img src="../assets/imgs/posse.png" alt="POSSE">
+    </div>
+    <a href="../favorite/favorite.html">
+      <img src="../assets/imgs/posse.png" alt="home" class="home">
+    </a>
+  </nav>
+  <div class="slide-container">
+    <header class="photo-container">
+        <div class="slide">
+          <img src="../assets/imgs/posse.png" alt="item" class="photo-img">
+          <img src="../assets/imgs/YouTube.png" alt="item" class="photo-img">
+        </div>
+        <p class="text">プログラミング</p>
+      </header>
+    </div>
+    <div class="activity-container">
+      <div class="activity-description">
+        <div class="description-title">
+          <h2 class="headline">僕らは</h2>
+        </div>
+        <p class="description">プログラミング大好き！！</p>
+      </div>
+        <div class="l-container">
+          <h1 class="title">活動投稿</h1>
+          <form id="form" class="mb-4">
+            <input type="text" id="input" class="form-control" placeholder="投稿を入力 + Enterで送信" autocomplete="off">
+          </form>
+          <ul class="list-group text-secondary" id="ul"></ul>
+          <button class="reply-button" id="r-button">コメント</button>
+        </div>
+        <div class="reply-content" id="reply-content">
+          <textarea type="text" class=" form-control list-group text-secondary mt-4" id="reply" placeholder="コメントを入力" cols="30" rows="5"></textarea>
+          <input class="submit-button" type="submit" onclick="test()" id="submit"></button>
+        </div>
+      </div>
+</body>
