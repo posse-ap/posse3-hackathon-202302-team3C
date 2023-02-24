@@ -107,7 +107,7 @@ svg, img, embed, object, iframe {
 
 }
 .container {
-  /*margin-left: 450px;*/
+  
 }
 .p-tappy {
     text-align: center;
@@ -126,7 +126,6 @@ svg, img, embed, object, iframe {
 }
 .p-tappy {
     position: relative;
-    display: inline-block;
     font-weight: bold;
     padding: 2em 2em;
     text-decoration: none;
@@ -584,3 +583,5 @@ small {
       display: none;
     }
   }
+
+ 
