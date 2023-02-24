@@ -1,0 +1,180 @@
+@media (min-width:768px) {
+  .hamburger {
+      display: none;
+  }
+}
+
+#input:checked~.hamburger-content {
+  transform: translateX(0);
+  display: block;
+}
+
+.hamburger-content {
+  /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  /*はじめは透過0*/
+  /*ナビの位置と形状*/
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /*ナビの高さ*/
+  background: #ffffff;
+  /*動き*/
+  transition: all 0.3s;
+}
+
+@media not all and (min-width: 768px) {
+  .hamburger-content {
+      /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+      position: fixed;
+      z-index: -1;
+      opacity: 0;
+      /*はじめは透過0*/
+      /*ナビの位置と形状*/
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      /*ナビの高さ*/
+      background: #ffffff;
+      /*動き*/
+      transition: all 0.3s;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .hamburger-content.panelactive {
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+@media not all and (max-width: 768px) {
+  .hamburger-content.panelactive {
+      display: none;
+  }
+}
+
+.hamburger-menu-quiz {
+  padding-top: 40px;
+}
+/*アクティブクラスがついたら透過なしにして最前面へ*/
+
+.hamburger-content.panelactive {
+  opacity: 1;
+  z-index: 999;
+}
+/*ナビゲーション*/
+
+.hamburger-content ul {
+  display: none;
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hamburger-content.panelactive ul {
+  display: block;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 9999;
+  /*ボタンを最前面に*/
+  top: 10px;
+  right: 5px;
+  cursor: pointer;
+  width: 74px;
+  height: 50px;
+  align-items: center;
+}
+/*×に変化*/
+
+.hamburger span {
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #666;
+  width: 45%;
+}
+
+.hamburger span:nth-of-type(1) {
+  top: 20px;
+}
+
+.hamburger span:nth-of-type(2) {
+  top: 34px;
+}
+
+.hamburger.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 50%;
+}
+
+.hamburger.active span:nth-of-type(3) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-of-type(2) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 50%;
+}
+
+.hamburger-logo {
+  padding: 24px
+}
+
+.hamburger-line-fixed-link {
+  align-items: center;
+  background-color: #5FDF5B;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  position: absolute;
+  width: 343px;
+  height: 60px;
+  left: calc(50% - 343px/2);
+  bottom: 159px;
+}
+
+.hamburger-sns {
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  left: calc(50% - 100px/2);
+  width: 150px;
+  bottom: 34px;
+  gap: 8px;
+}
+
+.hamburger-official-site {
+  color: #666;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.8;
+  bottom: 104px;
+  position: absolute;
+  left: calc(50% - 112px/2);
+  width: 122px;
+}
+
+@media (min-width:768px) {
+  .hamburger {
+      display: none;
+  }
+}
