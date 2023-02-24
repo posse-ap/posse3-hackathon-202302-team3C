@@ -112,6 +112,7 @@ submitButton.addEventListener('click', function () {
   ptag.setAttribute('class', 'myinf_item');
   litag.setAttribute('class', 'myinf_list');
 
+  profileBox.innerHTML="aaaaa";
   console.log("bb")
 
   litag.appendChild(ptag);
