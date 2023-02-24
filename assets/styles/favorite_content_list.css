@@ -93,7 +93,7 @@ img {
 }
 
 .text{
-  width:		50%;
+  width:		100%;
 	font-size:	200%;
 	text-align:	center;
 	top: 0%;
@@ -347,6 +347,11 @@ a {
   .description_wrapper {
     height: 100%;
   }
+}
+
+/* ゲーム好きの声 */
+.item-left {
+  display: flex;
 }
 
 /* ゲーム終了 */
