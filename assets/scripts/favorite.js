@@ -2,11 +2,10 @@
 //!           猪瀬雄大担当
 //! ***********************************************
 
-const form = document.getElementById("form");
-const input = document.getElementById("input");
-const ul = document.getElementById("ul");
-
-const todos = JSON.parse(localStorage.getItem("golf"));
+const form_game = document.getElementById("form_game");
+const input_game = document.getElementById("input_game");
+const ul_game = document.getElementById("ul");
+const todos_game = JSON.parse(localStorage.getItem("golf_game"));
 if (todos) {
   todos.forEach((todo) => {
     add(todo);
@@ -85,7 +84,7 @@ const slideImg1 = document.getElementById("slideImg1");
 function slideShow1() {
   num++;
   if (num >= picture1Array.length) {
-      num = 0;
+    num = 0;
   }
   slideImg1.src = picture1Array[num];
 }
@@ -102,7 +101,4 @@ function test() {
   })
 }
 
-//! **********************************************:
-//!           生川美羽担当
-//! ***********************************************
-// ゲームフォーム
+
