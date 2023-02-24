@@ -69,9 +69,15 @@ img {
 
 .activity-title{
   /* background-color: rgba(197, 101, 224); */
-  align-items: center;
+  /* align-items: center;
   color: white;
-  width: 100%;
+  width: 100%; */
+  font-size:5em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: #FFF;
+	text-shadow: 0 0 0.2em rgba(0,0,0,1);
 }
 
 .items-center {
@@ -141,7 +147,7 @@ img {
   text-align: center;
 }
 
-.shout-description{
+/* .shout-description{
   font-size: 20px;
   background-color: white;
   height: 120px;
@@ -153,10 +159,18 @@ img {
   color: black;
   padding: 3px 16px;
   border: solid 5px #C565E0;
-}
+} */
 
 .shout-paragraph{
   text-align: center;
+    font-size:2em;
+    text-align:center;
+    line-height:0.95em;
+    font-weight:bold;
+    text-shadow:
+      0 0.03em 0.03em rgba(69, 216, 243, 0.7),
+      0 0.03em 0.03em #000,
+      0 0.03em 0.03em #FBE9E7;
 }
 
 
@@ -165,7 +179,13 @@ img {
 }
 
 .new_favorite_form{
-  color: blue;
+  text-decoration: underline;
+  font-size:1em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: rgba(69, 216, 243, 0.7);
+	text-shadow: 0.02em 0.02em 0.02em rgba(0,0,0,1);
 }
 
 
