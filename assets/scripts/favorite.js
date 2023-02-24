@@ -74,6 +74,22 @@ const replyBtn = document.getElementById('r-button');
 replyBtn.addEventListener('click', () => {
   replyContent.style.display = 'block';
 })
+const picture1Array = [
+  '../assets/imgs/game_2peaple.jpg',
+  '../assets/imgs/game_miu.jpg',
+  '../assets/imgs/game_2peaple.jpg'
+];
+let num = 0;
+const slideImg1 = document.getElementById("slideImg1");
+
+function slideShow1() {
+  num++;
+  if (num >= picture1Array.length) {
+      num = 0;
+  }
+  slideImg1.src = picture1Array[num];
+}
+setInterval(slideShow1, 1500);
 
 function test() {
   let reply = document.getElementById('reply').value;

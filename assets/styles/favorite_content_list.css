@@ -106,22 +106,27 @@ img {
 
 .activity-container{
   display: block;
-  position: absolute;
-  margin-top: 530px;
+  /* position: absolute; */
+  /* margin-top: 530px; */
 }
 
-@media (max-width: 480px){
+.activity-container {
+  /* position: relative; */
+}
+
+.invitation_container {
+z-index: 99;
+display: flex;
+
+}
+
+ @media (min-width: 768px){
   .activity-container{
-    margin-top: 400px;
-  }
+  margin-top: 390px;
 }
+ }
 
-@media (min-width: 720px){
-  .activity-container{
-    margin-top: 790px;
-  }
 
-}
 
 .activity-container{
   width: 100%;
@@ -149,8 +154,6 @@ img {
   padding-top: 5px;
   border-radius: 20px;
   color: white;
-  width: 90px;
-  height: 50px;
   font-size: 30px;
   background-color:rgba(69, 216, 243, 0.7);
 }
@@ -262,4 +265,66 @@ input[type="checkbox"]:checked + label::after {
 
 .submit-button{
   float: right;
+}
+
+.discord_invitation {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #7289da;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  }
+
+  .discord-invitation a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+  }
+
+  .discord-link {
+    display: inline-block;
+    width: 100%;
+    font-size: 3em;
+    animation-name: boyoboyo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes boyoboyo {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.01) rotate(-0.01deg);
+    }
+    40% {
+      transform: scale(1.02) rotate(0.01deg);
+    }
+    60% {
+      transform: scale(1.03) rotate(-0.01deg);
+    }
+    80% {
+      transform: scale(1.02) rotate(0.01deg);
+    }
+    100% {
+      transform: scale(1.01);
+    }
+  }
+
+
+
+@media (min-width:768px) {
+  .photo-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
