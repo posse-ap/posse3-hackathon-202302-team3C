@@ -1,4 +1,4 @@
-// 生川美羽が作成
+// 生川美羽&猪瀬が作成
 // localStorage.clear()
 // これがあればローカルストレージ
 $(function () {
@@ -337,15 +337,6 @@ submitButton.addEventListener('click', function () {
   favoriteLink.innerHTML = favoriteContent;
 
 
-  // const options = [
-  //   "プログラミング",
-  //   "料理",
-  //   "ゲーム",
-  //   "旅行",
-  //   "YouTube",
-  //   "カフェ巡り",
-  //   "その他",
-  // ];
 
   if (favoriteContent === options[0]) {
     favoriteLink.href = '../favorite/programming.html';
