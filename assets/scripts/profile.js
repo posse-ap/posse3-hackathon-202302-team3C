@@ -40,7 +40,6 @@ options.forEach((option) => {
 
 let listContent = [];
 submitButton.addEventListener('click', function () {
-  console.log("aa")
   var myProfile = {
     university: universityInput.value,
     grades: gradesInput.value,
@@ -51,17 +50,13 @@ submitButton.addEventListener('click', function () {
     favorite:favoriteInput.value,
     sixteen: sixteenInput.value,
   }
-    console.log(myProfile)
-    console.log(listContent)
+    // console.log(myProfile)
+    // console.log(listContent)
     listContent.push(myProfile);
     local.stor = JSON.stringify(listContent);
-    console.log(local.stor)
+    // console.log(local.stor)
 
     if (sixteenInput.value === '指揮官型') {
-
-
-
-
         const profileBox1 = document.querySelector('.introduce_page1')
         const litag = document.createElement('div');
         const ptag = document.createElement('p');
@@ -73,6 +68,7 @@ submitButton.addEventListener('click', function () {
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
         const favoriteContent = favoriteInput.value;
+
         const sixteenContent = sixteenInput.value;
 
 
@@ -136,11 +132,14 @@ submitButton.addEventListener('click', function () {
 
         litag.appendChild(ptag);
         profileBox2.appendChild(litag)
+
+
     }
-    else if (sixteenInput.value === '起業型') {
+    else if (sixteenInput.value === '起業家型') {
         const profileBox3 = document.querySelector('.introduce_page3')
         const litag = document.createElement('li');
         const ptag = document.createElement('p');
+
 
         const nameContent = nameInput.value;
         const subnameContent = subnameInput.value;
@@ -479,7 +478,7 @@ submitButton.addEventListener('click', function () {
         litag.appendChild(ptag);
         profileBox13.appendChild(litag)
     }
-    else if (sixteenInput.value === '提唱型') {
+    else if (sixteenInput.value === '提唱者型') {
         const profileBox14 = document.querySelector('.introduce_page14')
         const litag = document.createElement('li');
         const ptag = document.createElement('p');
@@ -510,7 +509,7 @@ submitButton.addEventListener('click', function () {
         litag.appendChild(ptag);
         profileBox14.appendChild(litag)
     }
-    else if (sixteenInput.value === '擁護者') {
+    else if (sixteenInput.value === '擁護者型') {
         const profileBox15 = document.querySelector('.introduce_page15')
         const litag = document.createElement('li');
         const ptag = document.createElement('p');
@@ -541,7 +540,7 @@ submitButton.addEventListener('click', function () {
         litag.appendChild(ptag);
         profileBox15.appendChild(litag)
     }
-    else if (sixteenInput.value === '仲介者') {
+    else if (sixteenInput.value === '仲介者型') {
         const profileBox16 = document.querySelector('.introduce_page16')
         const litag = document.createElement('li');
         const ptag = document.createElement('p');
@@ -610,7 +609,7 @@ document.addEventListener("DOMContentLoaded", () => {
             favoriteInput.value = '';
             sixteenInput.value = '';
 
-            ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
+            ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent + '<br>' ;
 
             ptag.setAttribute('class', 'myinf_item')
             litag.setAttribute('class', 'myinf_list')
@@ -647,7 +646,7 @@ document.addEventListener("DOMContentLoaded", () => {
             litag.appendChild(ptag)
             profileBox2.appendChild(litag)
         }
-        else if (sixteenInput.value === '起業型') {
+        else if (sixteenInput.value === '起業家型') {
             const profileBox3 = document.querySelector('.introduce_page3')
             const litag = document.createElement('li');
             const ptag = document.createElement('p');
@@ -706,7 +705,7 @@ document.addEventListener("DOMContentLoaded", () => {
             litag.appendChild(ptag)
             profileBox4.appendChild(litag)
         }
-        else if (sixteenInput.value === '建築家') {
+        else if (sixteenInput.value === '建築家型') {
             const profileBox5 = document.querySelector('.introduce_page5')
             const litag = document.createElement('li');
             const ptag = document.createElement('p');

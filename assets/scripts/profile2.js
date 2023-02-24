@@ -1,12 +1,11 @@
 // 生川美羽が作成
-
+localStorage.clear()
 $(function () {
   $("#acMenu dt").on("click", function () {
       $(this).next().slideToggle();
 
   })
 });
-
 /**input内容 */
 // 要素を取得
 // 要素を取得
@@ -18,7 +17,6 @@ const subnameInput = document.querySelector('.subname_input');
 const gradesInput = document.querySelector('.grades_input');
 const favoriteInput = document.querySelector('.favorite_input');
 const sixteenInput = document.querySelector('.sixteen_input');
-
 const local = localStorage;
 const options = [
   "プログラミング",
@@ -26,19 +24,23 @@ const options = [
   "ゲーム",
   "旅行",
   "YouTube",
+  "K-pop",
   "その他",
 ];
-
 const select = document.querySelector("select.favorite_input");
-
 options.forEach((option) => {
   const optionElement = document.createElement("option");
   optionElement.text = option;
   select.add(optionElement);
 });
 
-const listContent = [];
 
+
+// submitButtonのクリックイベント
+let listContent = [];
+if (local.stor) {
+  listContent = JSON.parse(local.stor);
+}
 const profileBoxes = [
   document.querySelector('.introduce_page1'),
   document.querySelector('.introduce_page2'),
@@ -56,9 +58,7 @@ const profileBoxes = [
   document.querySelector('.introduce_page14'),
   document.querySelector('.introduce_page15'),
   document.querySelector('.introduce_page16'),
-
 ];
-
 const sixteenTypes = [
   '指揮官型', '幹部型', '起業家型', '管理者型',
   '建築家型', '主人公型', '領事官型', '巨匠型',
@@ -66,31 +66,41 @@ const sixteenTypes = [
   '冒険者型', '提唱者型', '擁護者型', '仲介者型',
 ];
 
+if (local.stor) {
+  const profiles = JSON.parse(local.stor);
+  profiles.forEach((profile) => {
+    const { university, grades, name, subname, faculty, favorite, sixteen } = profile;
+    const index = sixteenTypes.indexOf(sixteen);
+    const profileBox = profileBoxes[index];
+    const litag = document.createElement('div');
+    const ptag = document.createElement('p');
+    ptag.innerHTML = `大学名:<span>${university}</span><br>学年:<span>${grades}</span><br>学部・学科:<span>${faculty}</span><br>ふりがな:<span>${subname}</span><br>名前:<span>${name}</span><br>趣味:<span>${favorite}</span><br>診断結果:<span>${sixteen}</span><br>`;
+    ptag.setAttribute('class', 'myinf_item');
+    litag.setAttribute('class', 'myinf_list');
+    litag.appendChild(ptag);
+    profileBox.appendChild(litag);
+  });
+}
 submitButton.addEventListener('click', function () {
-  console.log("aa")
   var myProfile = {
     university: universityInput.value,
     grades: gradesInput.value,
     name: nameInput.value,
     subname: subnameInput.value,
-
     faculty: facultyInput.value,
     favorite: favoriteInput.value,
     sixteen: sixteenInput.value,
   };
-  console.log(myProfile);
-  console.log(listContent);
+  // プロフィールを配列に追加
   listContent.push(myProfile);
-  local.stor = JSON.stringify(listContent);
-  console.log(local.stor);
+  // 配列をローカルストレージに保存
+  localStorage.setItem('stor', JSON.stringify(listContent));
 
+  // プロフィールを表示するためのコード
   const index = sixteenTypes.indexOf(sixteenInput.value);
   const profileBox = profileBoxes[index];
   const litag = document.createElement('div');
   const ptag = document.createElement('p');
-
-
-
   const nameContent = nameInput.value;
   const subnameContent = subnameInput.value;
   const facultyContent = facultyInput.value;
@@ -112,9 +122,6 @@ submitButton.addEventListener('click', function () {
   ptag.setAttribute('class', 'myinf_item');
   litag.setAttribute('class', 'myinf_list');
 
-  profileBox.innerHTML="aaaaa";
-  console.log("bb")
-
   litag.appendChild(ptag);
   profileBox.appendChild(litag);
 
@@ -127,11 +134,5 @@ submitButton.addEventListener('click', function () {
     favoriteLink.href = '#';
   }
   favoriteLink.innerHTML = favoriteContent;
-  ptag.appendChild(favoriteLink);
+  profileBox.appendChild(favoriteLink);
 });
-
-//! *******************************************
-//! 猪瀬雄大が作成
-//! ******************************************
-
-
