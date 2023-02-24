@@ -306,6 +306,14 @@ img {
 }
 
 /* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+
+    /*ウィンドウ幅が720px以上の場合に適用*/
+
+
+
+
+}
 @media screen and (min-width: 768px) {
 
     /*ウィンドウ幅が720px以上の場合に適用*/
@@ -318,6 +326,10 @@ img {
         margin: 2em auto 0em auto;
         font-size: 1.6em;
     }
+    .br{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width:481px) and (max-width: 768px) {
@@ -337,6 +349,27 @@ img {
         margin: 2em auto 0em auto;
         font-size: 1.4em;
     }
+    .introduce_page1,
+.introduce_page2,
+.introduce_page3,
+.introduce_page4,
+.introduce_page5,
+.introduce_page6,
+.introduce_page7,
+.introduce_page8,
+.introduce_page9,
+.introduce_page10,
+.introduce_page10,
+.introduce_page10,
+.introduce_page11,
+.introduce_page12,
+.introduce_page13,
+.introduce_page14,
+.introduce_page15,
+.introduce_page16 {
+    width: 40vh;
+
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -360,6 +393,27 @@ img {
         margin: 2em auto 0em auto;
         font-size: 1.2em;
     }
+    .introduce_page1,
+.introduce_page2,
+.introduce_page3,
+.introduce_page4,
+.introduce_page5,
+.introduce_page6,
+.introduce_page7,
+.introduce_page8,
+.introduce_page9,
+.introduce_page10,
+.introduce_page10,
+.introduce_page10,
+.introduce_page11,
+.introduce_page12,
+.introduce_page13,
+.introduce_page14,
+.introduce_page15,
+.introduce_page16 {
+    width: 30vh;
+
+}
 }
 
 /* レスポンシブ対応 */
@@ -379,3 +433,66 @@ img {
         width: 100%;
     }
 }
+
+
+
+.here{
+    font-size: 36px;
+    color: #9831CC;
+    display: inline-block;
+    /* width: 100%; */
+    font-size: 2em;
+    animation-name: boyoboyo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes boyoboyo {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.05) rotate(-0.01deg);
+    }
+    40% {
+      transform: scale(1.07) rotate(0.01deg);
+    }
+    60% {
+      transform: scale(1.09) rotate(-0.01deg);
+    }
+    80% {
+      transform: scale(1.07) rotate(0.01deg);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+
+  .my-link2{
+    font-size: 1.01em;
+    font-weight: bold;
+    animation-name: boyoboyo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    display: inline-block;
+  }
+
+
+  .my-link {
+    color: blue;
+    font-size: 1.01em;
+    font-weight: bold;
+    position: relative;
+    left: -20px;
+    transition: 0.3s ease-in-out;}
+
+
+
+
+      .my-link:hover {
+        color: #aa1133;
+        left: 0;
+      }

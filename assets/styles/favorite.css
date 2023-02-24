@@ -48,7 +48,7 @@ img {
 }
 
 .item {
-  padding: 4rem 0;
+  padding: 1.1rem 0;
 }
 
 .section-title h2 {
@@ -168,4 +168,10 @@ img {
   color: blue;
 }
 
+h3{
+  text-align: center;
+}
+.good_container{
+  display: flex;
+}
 
