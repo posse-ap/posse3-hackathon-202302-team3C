@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="./assets/styles/top.css">
   <link rel="stylesheet" href="./assets/styles/hamburger.css">
   <script src="./assets/scripts/top.js"></script>
+  <script src="./assets/scripts/heart.js"></script>
 
 </head>
 
@@ -101,9 +102,71 @@
               <a href="http://tap-py.com/dgic8ot4" class="p-tappy">今月の予定　ここをクリック</a>
               </div>
               <div class="cotent">
-            <div class="p-message">
+            <div class="headline">
               みんなの声
             </div>
+            <div class="heart_container">
+            </div>
+            <table class="input_table">
+              <tbody>
+                <tr>
+                  <td class="heart-subname">
+                    <td>
+                      <input type="text" name="name" placeholder="やまだはなこ" class="heart_subname_input">
+                    </td>
+                    </td>
+                </tr>
+                <td class="heart_name">
+                  <label for="heat_name">名前</label>
+                </td>
+                  <td>
+                    <input type="text" name="name" placeholder="山田花子" class="heart_name_input">
+                  </td>
+                  </td>
+                </tr>
+                <td class="heart_comment">
+                  <label for="heart_comment">コメント</label>
+                </td>
+                <td>
+                  <textarea name="" id="" cols="75" rows="25" placeholder="何でも〜"></textarea>
+                </td>
+              </tbody>
+            </table>
+            <input class="heart_submit_button" type="button" value="送信する">
+            <div class="heart_submit"></div>
+            <section class="container">
+              <div class="container_content">
+                <ul class="container_content_date">
+                </ul>
+                <div class="container_content_name"></div>
+                <div class="container_content_detail">
+                  <p class="container_content_detail_ptag"></p>
+                </div>
+                <div class="container_content_btn">
+                  <div class="container_content_comment_btn" id="comment_btn">コメント</div>
+                  <div class="heart_button">
+                    <!-- <button class="heart_button"> -->
+                      <i class="heart-icon">
+                        <!-- <span class="material-icons">favorite</span> -->
+                      </i>
+                    </button>
+                    "いいね！"
+                    <div class="count_number">0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="past_comment"></div>
+              <div class="container_content_comment_box" id="comment_box"></div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="container_content_comment_box_reply" id="comment_reply">
+                    <td class="comment_input" name="" id="" cols="150" rows="10" placeholder="返信する"></textarea>
+                    </td></tr></tbody>
+              </table>
+              <input class="reply_button" type="button" value="返信する">
+            </div>
+            </section>
             <p class="resut">カレンダー</p>
           </div>
         <div class="container">
@@ -120,16 +183,16 @@
       </section>
       <div class="profile_container">
 
-        <div class="profile_inputContainer">
+        <div class="profile_inputContainer"> 
             <div class="profile_introduction">メッセージ入力</div>
-            <!-- ここから受け取る -->
+            ここから受け取る
             <form action="thanks.html">
                 <div class="profile_data_frame">
                     <table class="profile_input_data">
                         <tr>
                             <td><label for="university">名前</label></td>
                             <td><input type="text" name="university" placeholder=""
-                                    class="university_input"></td>
+                                     class="university_input"></td>
                         </tr>
                         <tr>
                             <td><label for="grade">学年</label></td>

@@ -135,7 +135,7 @@ svg, img, embed, object, iframe {
   }
 
   .p-tappy {
-    background: #1ec7bb;
+    background: #03a1fc;
 
   }
 .p-message {
@@ -149,7 +149,7 @@ svg, img, embed, object, iframe {
     text-align: center;
   color: black;
   font-size: 30px;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 /*フォーム*/
 .profile_inputContainer {
@@ -582,6 +582,299 @@ small {
     .u-sp-visible {
       display: none;
     }
+    
+  }
   }
 
  
+/*試し*/
+@media screen and (min-width: 481px) and (max-width: 899px)
+.headline {
+    width: 50%;
+    margin: 5% auto;
+    font-size: 2em;
+}
+
+.headline {
+    color: white;
+    text-align: center;
+    background: #03e3fc;
+    padding-top: 20px;
+    font-size: 30px;
+}
+.heart_container {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+}
+.input_table {
+  margin: 0 auto;
+  width: 80%;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+label {
+  cursor: default;
+}
+@media screen and (min-width: 481px) and (max-width: 899px)
+textarea {
+    width: 95%;
+}
+
+textarea {
+    overflow: auto;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+.heart_submit_button {
+  width: 80%;
+  margin-left: 10%;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+input[type="button" i] {
+  user-select: none;
+  white-space: pre;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  color: buttontext;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+input {
+  writing-mode: horizontal-tb !important;
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-weight: ;
+  font-stretch: ;
+  text-rendering: auto;
+  letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    -webkit-rtl-ordering: logical;
+}
+.container_content_comment_btn {
+  border: 1.5px solid;
+  color: #afa9aa;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 3px 13px;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  cursor: default;
+}
+.container {
+  width: 80%;
+  gap: 5%;
+}
+.container {
+  margin: 10% auto;
+}
+section {
+  display: block;
+}
+.container_content {
+  background-color: white;
+  border: solid #666;
+  margin: 0 5%;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.container_content_detail {
+  border-bottom: solid;
+  height: 30em;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.container_content_btn {
+  display: flex;
+  justify-content: right;
+}
+.container_content_comment_btn {
+  border: 1.5px solid;
+  color: #afa9aa;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 3px 13px;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.heart_button {
+  border: 1.5px solid;
+  color: #afa9aa;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 3px 13px;
+  display: flex;
+  width: 150px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.heart_count {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button {
+  writing-mode: horizontal-tb !important;
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-weight: ;
+  font-stretch: ;
+  text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    padding: 1px 6px;
+}
+.count_number {
+  margin-left: 10px;
+}
+#comment_box {
+  display: none;
+}
+
+.container_content_comment_box {
+  text-align: center;
+  flex-direction: column;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.reply_button {
+  width: 30%;
+  height: auto;
+}
+
+
+textarea {
+  writing-mode: horizontal-tb !important;
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-weight: ;
+  font-stretch: ;
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  resize: auto;
+  cursor: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  background-color: field;
+  column-count: initial !important;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  padding: 2px;
+}
+
+.cotent {
+  padding-top: 100px;
+}
