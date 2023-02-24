@@ -4,7 +4,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
+    <script src="./assets/scripts/jquery3.6.0.js" defer></script>
+    <script src="./assets/scripts/hamburger.js" defer></script>
+
     <script type="text/javascript">
             $(document).ready(function(){
                 $('.slider').bxSlider({
@@ -13,42 +15,82 @@
                 });
             });
     </script>
-    
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSSE</title>
   <!-- スタイルシート読み込み -->
-  <link rel="stylesheet" href="./assets/styles/top.css">
   <link rel="stylesheet" href="./assets/styles/normalize.css">
+  <link rel="stylesheet" href="./assets/styles/top.css">
+  <link rel="stylesheet" href="./assets/styles/hamburger.css">
   <script src="./assets/scripts/top.js"></script>
-  <script src= defer></script>
+
 </head>
 
 <body>
   <header id="js-header" class="l-header p-header">
     <div class="p-header__logo"><img src="./assets/imgs/posse.png" alt="POSSE"></div>
-    <button class="p-header__button" id="js-headerButton"></button>
     <div class="p-header__inner">
       <nav class="p-header__nav">
         <ul class="p-header__nav__list">
           <li class="p-header__nav__item">
-            <a href="./profile.html" class="p-header__nav__item__link">自己紹介</a>
+            <a href="./top.html" class="p-header__nav__item__link">トップ</a>
+          </li>
+          <li class="p-header__nav__item">
+            <a href="./profile.html" class="p-header__nav__item__link">プロフィール</a>
           </li>
           <li class="p-header__nav__item">
             <a href="./favorite/favorite.html" class="p-header__nav__item__link">好きなもの一覧</a>
           </li>
         </ul>
+        </ul>
       </nav>
-      <div class="hamburger"><span></span><span></span></div>
 
-    
-  </header>
+
+    </header>
+  <div class="hamburger"><span></span><span></span></div>
+
+  <nav class="hamburger-content">
+    <ul class="back-menu">
+      <li class="hamburger-menu-toppage">
+        <a href="../top.html" class="hamburger-menu-link">トップ</a>
+      </li>
+      <li class="hamburger-menu-quiz">
+        <a href="../profile.html" class="hamburger-menu-link">プロフィール</a>
+      </li>
+      <li class="hamburger-menu-quiz">
+        <a href="./favorite/favorite.html" class="hamburger-menu-link">好きなもの一覧</a>
+      </li>
+    </ul>
+    <div class="hamburger-line-fixed">
+      <div class="line-fixed-wrapper">
+        <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="hamburger-line-fixed-link"><i
+            class="line-fixed-icon"><img src="../assets/imgs/icon-line.png" alt=" "></i>
+          <p class="line-fixed-text ">POSSE公式LINE追加</p><i class="line-fixed-share
+                  "><img src="../assets/imgs/icon-link.png" alt=" "></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hamburger-official-site">
+      <a href="https://posse-ap.com/">POSSE公式サイト</a>
+    </div>
+
+    <br>
+    <div class="hamburger-sns">
+      <li class="posse-sns">
+        <a href="https://twitter.com/posse_program"><img src="../assets/imgs/twitter.png" alt=" "></a>
+
+        <a href="https://www.instagram.com/posse_programming/"><img src="../assets/imgs/insta.png"></a>
+      </li>
+    </div>
+  </nav>
 
   <main class="l-main">
     <section class="p-top-hero">
-      
+
         <div class="slider">
             <img src="./assets/imgs/IMG_5418.JPG" width="100" height="800" alt="">
             <img src="./assets/imgs/IMG_5409.JPG" width="100" height="800" alt="">
