@@ -8,3 +8,5 @@ $(".hamburger-content a").click(function() { //ナビゲーションのリンク
   $(".hamburger").removeClass('active'); //ボタンの activeクラスを除去し
   $(".hamburger-content").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
 });
+
+// 猪瀬

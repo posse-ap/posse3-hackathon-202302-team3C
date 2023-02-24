@@ -183,4 +183,55 @@ h3{
 
 /* favoriteフォーム */
 
+.addContent {
+  text-align: center;
+  display: block;
+  text-align: center;
+  border: #CCCC 1px solid;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1em 1em;
+  text-decoration: none;
+  color: #FFF;
+  transition: .4s;
+  background: #03e3fc;
+  padding: 1em 0;
+  margin: 0 auto;
+}
 
+.suggestion {
+  text-align: center;
+  display: block;
+  text-align: center;
+  border: #CCCC 1px solid;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 50px 50px;
+  text-decoration: none;
+  color: #FFF;
+  transition: .4s;
+  background: #03e3fc;
+  padding: 1em 0;
+  margin: 0 auto;
+}
+
+.favorite_form {
+    display: block;
+    text-align: center;
+    border: #CCCC 1px solid;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2em 2em;
+    text-decoration: none;
+    color: #FFF;
+    transition: .4s;
+    background: #03a1fc;
+    padding: 1em 0;
+    margin: 0 auto;
+}
