@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/scripts/favorite.js">
+  <link rel="stylesheet" href="../assets/styles/top.css">
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../assets/styles/favorite.css">
+  <link rel="stylesheet" href="../assets/styles/hamburger.css">
+  <script src="../assets/scripts/good.js" defer></script>
+  <script src="../assets/scripts/favorite.js"></script>
+  <script src="../assets/scripts/hamburger.js" defer></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+  <title>好きなもの一覧</title>
+  <!-- <link rel="icon" href="../favicon.ico" /> -->
+</head>
+
+<body>
+
+  <header id="js-header" class="l-header p-header">
+    <div class="p-header__logo"><img src="../assets/imgs/posse.png" alt="POSSE"></div>
+    <div class="p-header__inner">
+      <nav class="p-header__nav">
+        <ul class="p-header__nav__list">
+          <li class="p-header__nav__item">
+            <a href="../top.html" class="p-header__nav__item__link">トップ</a>
+          </li>
+          <li class="p-header__nav__item">
+            <a href="../profile.html" class="p-header__nav__item__link">プロフィール</a>
+          </li>
+          <li class="p-header__nav__item">
+            <a href="../favorite/favorite.html" class="p-header__nav__item__link">好きなもの一覧</a>
+          </li>
+        </ul>
+        </ul>
+      </nav>
+
+
+
+  </header>
+  <div class="hamburger"><span></span><span></span></div>
+
+  <nav class="hamburger-content">
+    <ul class="back-menu">
+      <li class="hamburger-menu-toppage">
+        <a href="../top.html" class="hamburger-menu-link">トップ</a>
+      </li>
+      <li class="hamburger-menu-quiz">
+        <a href="../profile.html" class="hamburger-menu-link">プロフィール</a>
+      </li>
+      <li class="hamburger-menu-quiz">
+        <a href="../favorite/favorite.html" class="hamburger-menu-link">好きなもの一覧</a>
+      </li>
+    </ul>
+    <div class="hamburger-line-fixed">
+      <div class="line-fixed-wrapper">
+        <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="hamburger-line-fixed-link"><i
+            class="line-fixed-icon"><img src="../assets/imgs/icon-line.png" alt=" "></i>
+          <p class="line-fixed-text ">POSSE公式LINE追加</p><i class="line-fixed-share
+                  "><img src="../assets/imgs/icon-link.png" alt=" "></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hamburger-official-site">
+      <a href="https://posse-ap.com/">POSSE公式サイト</a>
+    </div>
+
+    <br>
+    <div class="hamburger-sns">
+      <li class="posse-sns">
+        <a href="https://twitter.com/posse_program"><img src="../assets/imgs/twitter.png" alt=" "></a>
+
+        <a href="https://www.instagram.com/posse_programming/"><img src="../assets/imgs/insta.png"></a>
+      </li>
+    </div>
+  </nav>
+  <section class="products">
+    <div class="section-title">
+      <p class="activity-title">私はこれが好き!</p>
+    </div>
+    <div class="shout-description">
+      <p class="shout-paragraph">同じ趣味を持った人が
+        <br>どんな活動をしているか覗いてみよう
+      </p>
+      <!-- <br><a href="#new_favorite" class="new_favorite_form">好きなものを追加したい場合は以下のフォームから連絡してね！</a> -->
+    </div>
+    <div class="items-center" id="items-container">
+
+
+      <article class="item">
+        <a href="../favorite/programming.html">
+          <div class="img-container">
+            <img src="../assets/imgs/programming.png" alt="item" class="item-img">
+          </div>
+          <h3>プログラミング</h3>
+        </a>
+        <div class="good_container">
+          <button class="like-button">👍</button>
+          <p class="like-count">0</p>
+        </div>
+      </article>
+      <article class="item">
+        <a href="../favorite/cooking.html">
+          <div class="img-container">
+            <img src="../assets/imgs/cooking.jpeg" alt="item" class="item-img">
+          </div>
+          <h3>料理</h3>
+        </a>
+        <div class="good_container">
+          <button class="like-button">👍</button>
+          <p class="like-count">0</p>
+        </div>
+      </article>
+      <article class="item">
+        <a href="../favorite/game.html">
+          <div class="img-container">
+            <img src="../assets/imgs/game.jpeg" alt="item" class="item-img">
+          </div>
+          <h3>ゲーム</h3>
+        </a>
+        <div class="good_container">
+          <button class="like-button">👍</button>
+          <p class="like-count">0</p>
+        </div>
+      </article>
+      <article class="item">
+        <a href="../favorite/travel.html">
+          <div class="img-container">
+            <img src="../assets/imgs/travel.jpeg" alt="item" class="item-img">
+          </div>
+          <h3>旅行</h3>
+        </a>
+        <div class="good_container">
+          <button class="like-button">👍</button>
+          <p class="like-count">0</p>
+        </div>
+      </article>
+      <article class="item">
+        <a href="../favorite/youtube.html">
+          <div class="img-container">
+            <img src="../assets/imgs/YouTube.png" alt="item" class="item-img">
+          </div>
+          <h3>YouTube</h3>
+        </a>
+        <div class="good_container">
+          <button class="like-button">👍</button>
+          <p class="like-count">0</p>
+        </div>
+      </article>
+      <article class="item">
+        <a href="../favorite/cafe.html">
+          <div class="img-container">
+            <img src="../assets/imgs/cafe.jpg" alt="item" class="item-img">
+          </div>
+          <h3>カフェめぐり</h3>
+        </a>
+        <div class="good_container">
+          <button class="like-button">👍</button>
+          <p class="like-count">0</p>
+        </div>
+      </article>
+      <article class="item">
+        <div class="img-container">
+          <img src="../assets/imgs/posse.png" alt="item" class="item-img">
+        </div>
+        <h3>Coming Soon...</h3>
+        <div class="good_container">
+          <button class="like-button">👍</button>
+          <p class="like-count">0</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 追加してほしい趣味 -->
+  <section id="favorite_form">
+    <div class="addContent">
+    <p>追加して欲しい「趣味」コンテンツ</p>
+    <p>googleフォームで趣味コンテンツの追加要望❕<br>
+      <a href="https://forms.gle/H4fMk2qWtxCEgMZP8">👉ここをClick</a></p>
+    </div>
+    <div class="suggestion">
+      <p>このアプリから実際に行われた＆これから行われるかもしれないリアイベを確認❕</p>
+      <a href="https://docs.google.com/spreadsheets/d/1XKJSPIbnWLDE3dHbHpvYxhId2YUy3iBG9rS2QoIUzwg/edit?resourcekey#gid=672602335">👉ここをClick</a></p>
+
+    </div>
+  </section>

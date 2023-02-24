@@ -1,0 +1,44 @@
+
+
+
+/* ゲーム好きの声 */
+#gameVoice {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#gameVoice .gameContent {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 5%;
+}
+
+#gameVoice img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#gameVoice .gameText {
+    text-align: left;
+}
+
+.game-section-title {
+    text-decoration: underline;
+}
+
+/* やってほしいリアイベ */
+.profile_introduction {
+    text-decoration: underline;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-top: solid 2px #eee;
+}

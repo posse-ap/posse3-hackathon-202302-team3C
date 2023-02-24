@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <!-- <link rel="icon" href="../assets/favicon.ico" /> -->
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../assets/styles/favorite.css">
+  <link rel="stylesheet" href="../assets/styles/top.css">
+  <link rel="stylesheet" href="../assets/styles/hamburger.css">
+  <link rel="stylesheet" href="../assets/styles/favorite_content_list.css">
+  <!-- <link rel="stylesheet" href="../assets/styles/game.css"> -->
+</head>
+
+<body class="p-body">
+
+
+  <header id="js-header" class="l-header p-header">
+    <div class="p-header__logo"><img src="../assets/imgs/posse.png" alt="POSSE"></div>
+    <button class="p-header__button" id="js-headerButton"></button>
+    <div class="p-header__inner">
+      <nav class="p-header__nav">
+        <ul class="p-header__nav__list">
+          <li class="p-header__nav__item">
+            <a href="../top.html" class="p-header__nav__item__link">トップ</a>
+          </li>
+          <li class="p-header__nav__item">
+            <a href="../profile.html" class="p-header__nav__item__link">プロフィール</a>
+          </li>
+          <li class="p-header__nav__item">
+            <a href="../favorite/favorite.html" class="p-header__nav__item__link">好きなもの一覧</a>
+          </li>
+        </ul>
+        </ul>
+      </nav>
+
+
+  </header>
+  <div class="hamburger"><span></span><span></span></div>
+
+  <nav class="hamburger-content">
+    <ul class="back-menu">
+      <li class="hamburger-menu-toppage">
+        <a href="../top.html" class="hamburger-menu-link">トップ</a>
+      </li>
+      <li class="hamburger-menu-quiz">
+        <a href="../profile.html" class="hamburger-menu-link">プロフィール</a>
+      </li>
+      <li class="hamburger-menu-quiz">
+        <a href="../favorite/favorite.html" class="hamburger-menu-link">好きなもの一覧</a>
+      </li>
+    </ul>
+    <div class="hamburger-line-fixed">
+      <div class="line-fixed-wrapper">
+        <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="hamburger-line-fixed-link"><i
+            class="line-fixed-icon"><img src="../assets/imgs/icon-line.png" alt=" "></i>
+          <p class="line-fixed-text ">POSSE公式LINE追加</p><i class="line-fixed-share
+                  "><img src="../assets/imgs/icon-link.png" alt=" "></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hamburger-official-site">
+      <a href="https://posse-ap.com/">POSSE公式サイト</a>
+    </div>
+
+    <br>
+    <div class="hamburger-sns">
+      <li class="posse-sns">
+        <a href="https://twitter.com/posse_program"><img src="../assets/imgs/twitter.png" alt=" "></a>
+
+        <a href="https://www.instagram.com/posse_programming/"><img src="../assets/imgs/insta.png"></a>
+      </li>
+    </div>
+  </nav>
+
+  <main>
+    <div class="slide-container">
+      <span class="photo-container">
+        <div class="slide2">
+          <img src="../assets/imgs/game_2peaple.jpg" width="100%" id="slideImg1">
+          <div class="invitation_container">
+            <p class="text">YouTube</p>
+          </div>
+        </div>
+        <div class="description_wrapper">
+          <div class="description-title">
+            <div class="discord_invitation">
+              <h2 class="headline">YouTube好き同士!&nbsp;</h2>
+              <a href="https://discord.gg/MqPzP4jh" class="discord-link">&nbsp;&nbsp;Join our Discord server!</a>
+            </div>
+          </div>
+          <div class="description-title">
+            <div class="discord_invitation">
+              <h2 class="headline">みんながどんなYouTubeが好きか<br>覗いてみよう!</h2>
+              <a href="#voice" class="game_voice">YouTube好きPOSSE生の声</a>
+            </div>
+          </div>
+          <div class="description-title">
+            <div class="discord_invitation">
+              <h2 class="headline">YouTube好き同士で遊ぼう!</h2>
+              <a href="#profile_introduction" class="game_form">&nbsp;&nbsp;リアイベ参加願い</a>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+
+    <!-- ゲーム好きの声 -->
+    <section id="gameVoice" class="wrapper">
+      <h2 class="game-section-title">Youtube好きPOSSE生の声</h2>
+      <div class="gameContent">
+        <img src="../assets/imgs/yudai.jpg" alt="雄大">
+        <div class="gameText">
+          <h3 class="content-title">猪瀬雄大<br>3.0期生</h3>
+          <p>
+            毎日Youtubeみます！！
+          </p>
+        </div>
+      </div>
+      <div class="gameContent">
+        <img src="../assets/imgs/miu.jpg" alt="美羽">
+        <div class="gameText">
+          <h3 class="content-title">生川美羽<br>3.0期生</h3>
+          <p>
+            Youtubeしか勝たん
+        </div>
+      </div>
+      <div class="gameContent">
+        <img src="../assets/imgs/miharu.jpg" alt="美晴">
+        <div class="gameText">
+          <h3 class="gameContent-title">下山美晴<br>3.5期生</h3>
+          <p>
+            Youtube見やん人とかおらんよな？
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- フォーム -->
+    <section class="favoriteForm">
+      <h2 class="form-title">Youtube好き同士で遊ぼう!</h2>
+      <p>
+        <label class="event_submit">リアイベ名:<input type="text" id="cultureText"></label>
+      </p>
+      <p>Enterで希望を送信</p>
+      <p id="msg"></p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <p><strong class="footer-join">POSSEアプリでイベントに参加しよう! </strong><br><a href="https://event.posse-ap.com/login"
+          id="posseApp">ここをタップ！</a></p>
+    </div>
+  </footer>
+  <script src="../assets/scripts/favorite.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../assets/scripts/hamburger.js" defer></script>
+  <script src="../assets/scripts/game.js"></script>
+
+</body>
+
+</html>

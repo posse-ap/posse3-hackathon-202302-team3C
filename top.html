@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <!-- <script src="./assets/scripts/jquery3.6.0.js" defer></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./assets/scripts/hamburger.js" defer></script>
+
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    pause: 3000,
+                });
+            });
+    </script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POSSE</title>
+  <!-- スタイルシート読み込み -->
+  <link rel="stylesheet" href="./assets/styles/normalize.css">
+  <link rel="stylesheet" href="./assets/styles/top.css">
+  <link rel="stylesheet" href="./assets/styles/hamburger.css">
+  <link rel="stylesheet" href="./assets/styles/favorite_content_list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="./assets/scripts/top.js"></script>
+</head>
+
+<body>
+  <header id="js-header" class="l-header p-header">
+    <div class="p-header__logo"><img src="./assets/imgs/posse.png" alt="POSSE"></div>
+    <div class="p-header__inner">
+      <nav class="p-header__nav">
+        <ul class="p-header__nav__list">
+          <li class="p-header__nav__item">
+            <a href="./top.html" class="p-header__nav__item__link">トップ</a>
+          </li>
+          <li class="p-header__nav__item">
+            <a href="./profile.html" class="p-header__nav__item__link">プロフィール</a>
+          </li>
+          <li class="p-header__nav__item">
+            <a href="./favorite/favorite.html" class="p-header__nav__item__link">好きなもの一覧</a>
+          </li>
+        </ul>
+        </ul>
+      </nav>
+    </header>
+  <div class="hamburger"><span></span><span></span></div>
+
+  <nav class="hamburger-content">
+    <ul class="back-menu">
+      <li class="hamburger-menu-toppage">
+        <a href="../top.html" class="hamburger-menu-link">トップ</a>
+      </li>
+      <li class="hamburger-menu-quiz">
+        <a href="../profile.html" class="hamburger-menu-link">プロフィール</a>
+      </li>
+      <li class="hamburger-menu-quiz">
+        <a href="./favorite/favorite.html" class="hamburger-menu-link">好きなもの一覧</a>
+      </li>
+    </ul>
+    <div class="hamburger-line-fixed">
+      <div class="line-fixed-wrapper">
+        <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="hamburger-line-fixed-link"><i
+            class="line-fixed-icon"><img src="../assets/imgs/icon-line.png" alt=" "></i>
+          <p class="line-fixed-text ">POSSE公式LINE追加</p><i class="line-fixed-share
+                  "><img src="../assets/imgs/icon-link.png" alt=" "></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hamburger-official-site">
+      <a href="https://posse-ap.com/">POSSE公式サイト</a>
+    </div>
+
+    <br>
+    <div class="hamburger-sns">
+      <li class="posse-sns">
+        <a href="https://twitter.com/posse_program"><img src="../assets/imgs/twitter.png" alt=" "></a>
+
+        <a href="https://www.instagram.com/posse_programming/"><img src="../assets/imgs/insta.png"></a>
+      </li>
+    </div>
+  </nav>
+
+  <main class="l-main main_wrapper">
+    <section class="p-top-hero">
+
+        <div class="slider">
+            <img src="./assets/imgs/IMG_5418.JPG" width="100" height="800" alt="">
+            <img src="./assets/imgs/IMG_5409.JPG" width="100" height="800" alt="">
+            <img src="./assets/imgs/IMG_5411.JPG" width="100" height="800" alt="">
+            <img src="./assets/imgs/IMG_5419.JPG" width="100" height="800" alt="">
+            </div>
+            <div class="p-tappy">
+              <a href="http://tap-py.com/dgic8ot4" class="p-tappy">👀【tappy】 今月の予定を共有しよう！　<br >いつHarbarsいく？一緒にカリキュラム進めよう！<br >＞＞＞<strong class="here">ここ</strong>をクリック👀</a>
+              </div>
+              <div class="cotent">
+                <h1 class="chart_title">~先月のHarBors訪問人数~</h1>
+                <div class="graph" id="bar-graph">
+                      </div>
+              </section>
+              <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
+                <script src="./assets/scripts/chart.js" defer></script>
+          </section>
+          <div class="profile_container">
+            <p class="resut">スケジュールカレンダー</p>
+          </div>
+        <div class="container">
+          <iframe src="https://freecalend.com/open/mem175792_date20230224/wwide" style="border:solid 1px #777"  frameborder="0" scrolling="no" class="calender" ;></iframe>
+            </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p><strong class="footer-join">POSSEアプリで<br>イベントに参加しよう! </strong><br><a href="https://event.posse-ap.com/login" id="posseApp">ここをタップ！</a></p>
+    </div>
+    <div class="p-footer__copyright">
+      <small lang="en">©︎2023 POSSE</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>

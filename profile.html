@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/top.css"> -->
+    <link rel="stylesheet" href="./assets/styles/profile.css">
+    <script src="./assets/scripts/jquery3.6.0.js"></script>
+    <script src="./assets/scripts/hamburger.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles/hamburger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+      rel="stylesheet">
+    <!-- <script src="./assets/scripts/hamburger.js"></script> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+</head>
+
+<body>
+    <header id="js-header" class="l-header p-header">
+        <div class="p-header__logo"><img src="./assets/imgs/posse.png" alt="POSSE"></div>
+        <div class="p-header__inner">
+            <nav class="p-header__nav">
+                <ul class="p-header__nav__list">
+                    <li class="p-header__nav__item">
+                        <a href="./top.html" class="p-header__nav__item__link">トップ</a>
+                    </li>
+                    <li class="p-header__nav__item">
+                        <a href="./profile.html" class="p-header__nav__item__link">プロフィール</a>
+                    </li>
+                    <li class="p-header__nav__item">
+                        <a href="./favorite/favorite.html" class="p-header__nav__item__link">好きなもの一覧</a>
+                    </li>
+                </ul>
+                </ul>
+            </nav>
+
+
+    </header>
+    <div class="hamburger"><span></span><span></span></div>
+
+    <nav class="hamburger-content">
+        <ul class="back-menu">
+            <li class="hamburger-menu-toppage">
+                <a href="../top.html" class="hamburger-menu-link">トップ</a>
+            </li>
+            <li class="hamburger-menu-quiz">
+                <a href="../profile.html" class="hamburger-menu-link">プロフィール</a>
+            </li>
+            <li class="hamburger-menu-quiz">
+                <a href="./favorite/favorite.html" class="hamburger-menu-link">好きなもの一覧</a>
+            </li>
+        </ul>
+        <div class="hamburger-line-fixed">
+            <div class="line-fixed-wrapper">
+                <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="hamburger-line-fixed-link"><i
+                        class="line-fixed-icon"><img src="../assets/imgs/icon-line.png" alt=" "></i>
+                    <p class="line-fixed-text ">POSSE公式LINE追加</p><i class="line-fixed-share
+                      "><img src="../assets/imgs/icon-link.png" alt=" "></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hamburger-official-site">
+            <a href="https://posse-ap.com/">POSSE公式サイト</a>
+        </div>
+
+        <br>
+        <div class="hamburger-sns">
+            <li class="posse-sns">
+                <a href="https://twitter.com/posse_program"><img src="../assets/imgs/twitter.png" alt=" "></a>
+
+                <a href="https://www.instagram.com/posse_programming/"><img src="../assets/imgs/insta.png"></a>
+            </li>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 診断 -->
+        <section id="about" class="wrapper">
+            <h2 class="section-title">16personalitiesを<br class="br">診断してみよう!</h2>
+            <div class="content">
+                <img src="./assets/imgs/16personal.png" alt="診断結果１例">
+                <div class="text">
+                    <h3 class="content-title">診断結果で自分の心を理解し、<br class="br">自分をより生かそう</h3>
+                    <p>
+                    <div class="16link">診断は<a href="https://www.16personalities.com/ja" class="here">ここ</a>をクリック</div>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- プロフィール -->
+        <div class="profile_container">
+            <div class="profile_container">
+                <div class="profile_inputContainer">
+                    <h2 class="profile_introduction">プロフィール&診断結果入力</h2>
+                    <!-- ここから受け取る -->
+                    <form action="thanks.html">
+                        <div class="profile_data_frame">
+                            <table class="profile_input_data">
+                                <tr>
+                                    <td><label for="university">＜大学＞</label></td>
+                                    <td><input type="text" name="university" placeholder="○○大学"
+                                            class="university_input"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="grade">＜学年＞</label></td>
+                                    <td>
+                                        <select name="grades" class="grades_input" required>
+                                            <option value="" hidden>選択してください</option>
+                                            <option>1年</option>
+                                            <option>2年</option>
+                                            <option>3年</option>
+                                            <option>4年</option>
+                                            <option>その他</option>
+                                        </select>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="">＜学部,学科＞</label></td>
+                                    <td><input type="text" name="faculty" placeholder="○学部,○学科" class="faculty_input">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="comment">＜ふりがな＞</label></td>
+                                    <td><input type="text" name="subname" placeholder="やまだたろう" class="subname_input">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="comment">＜名前＞</label></td>
+                                    <td><input type="text" name="name" placeholder="山田太郎" class="name_input"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="favorite">＜趣味＞</label></td>
+                                    <td>
+                                        <select name="favorite" class="favorite_input" required>
+                                            <option value="" hidden>選択してください</option>
+
+                                        </select>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="comment">＜診断結果＞</label></td>
+                                    <td>
+                                        <select name="sixteen" class="sixteen_input" required>
+                                            <option value="" hidden>選択してください</option>
+
+                                        </select>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="profile_submit">
+                                <input type="button" class="submit_button">
+                                <div class="submit_message">送信</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="box"></div>
+            <div class="headline">
+                <p>自己紹介&診断結果一覧</p>
+            </div>
+
+            <div class="acMenu_box">
+                <dl id="acMenu">
+
+                    <dt class="menu_title" id="t0"><strong>指揮官型</strong></dt>
+                    <dd>
+                        <div class="introduce_page1"></div>
+                    </dd>
+                    <dt id="t1"><strong id="testkun">幹部型</strong></dt>
+                    <dd>
+                        <div class="introduce_page2"></div>
+                    </dd>
+                    <dt id="t2"><strong>起業家型</strong></dt>
+                    <dd>
+                        <div class="introduce_page3"></div>
+                    </dd>
+                    <dt id="t3"><strong>管理者型</strong></dt>
+                    <dd>
+                        <div class="introduce_page4"></div>
+                    </dd>
+                    <dt id="t4"><strong>建築家型</strong></dt>
+                    <dd>
+                        <div class="introduce_page5"></div>
+                    </dd>
+                    <dt id="t5"><strong>主人公型</strong></dt>
+                    <dd>
+                        <div class="introduce_page6"></div>
+                    </dd>
+                    <dt id="t6"><strong>領事官型</strong></dt>
+                    <dd>
+                        <div class="introduce_page7"></div>
+                    </dd>
+                    <dt id="t7"><strong>巨匠型</strong></dt>
+                    <dd>
+                        <div class="introduce_page8"></div>
+                    </dd>
+                    <dt id="t8"><strong>論理者型</strong></dt>
+                    <dd>
+                        <div class="introduce_page9"></div>
+                    </dd>
+                    <dt id="t9"><strong>エンターテイナー型</strong></dt>
+                    <dd>
+                        <div class="introduce_page10"></div>
+                    </dd>
+                    <dt id="t10"><strong>討論者型</strong></dt>
+                    <dd>
+                        <div class="introduce_page11"></div>
+                    </dd>
+                    <dt id="t11"><strong>広報運動家型</strong></dt>
+                    <dd>
+                        <div class="introduce_page12"></div>
+                    </dd>
+                    <dt id="t12"><strong>冒険者型</strong></dt>
+                    <dd>
+                        <div class="introduce_page13"></div>
+                    </dd>
+                    <dt id="t13"><strong>提唱者型</strong></dt>
+                    <dd>
+                        <div class="introduce_page14"></div>
+                    </dd>
+                    <dt id="t14"><strong>擁護者型</strong></dt>
+                    <dd>
+                        <div class="introduce_page15"></div>
+                    </dd>
+                    <dt id="t15" ><strong >仲介者型</strong></dt>
+                    <dd>
+                        <div class="introduce_page16"></div>
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+
+    </main>
+    <!-- <script src="./assets/scripts/profile.js" defer></script> -->
+    <script src="./assets/scripts/profile2.js" defer></script>
+</body>
+
+</html>
