@@ -120,6 +120,8 @@ display: flex;
 
 }
 
+
+
  @media (min-width: 768px){
   .activity-container{
   margin-top: 390px;
@@ -359,3 +361,5 @@ a {
     height: 100%;
   }
 }
+
+
