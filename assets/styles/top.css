@@ -23,7 +23,7 @@
     z-index: 100;
 }
 img {
-    max-width: 100%;
+    max-width: 100%
 }
 .p-header__button {
     display: none;
@@ -36,6 +36,22 @@ img {
     top: 8px;
     width: 40px;
     z-index: 1000;
+}
+
+button, [type=button], [type=reset], [type=submit] {
+    cursor: pointer;
+}
+button, input, optgroup, select, textarea {
+    appearance: none;
+    background: transparent;
+    border-radius: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    vertical-align: middle;
 }
 .p-header__inner {
     align-items: center;
@@ -76,22 +92,220 @@ li {
     line-height: 1.5;
     text-decoration: none;
 }
-
-
+.p-top-hero__image img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+svg, img, embed, object, iframe {
+    vertical-align: bottom;
+}
 
 /*main*/
 .l-headercontainer {
     
 }
+.container {
+  /*margin-left: 450px;*/
+}
 .p-tappy {
     text-align: center;
-    color: #666;
+    color: red;
     font-weight: bold;
     text-decoration: none;
+    padding: 20px 10px 20px;
+
+}
+.p-tappy {
+  display: block;
+  text-align: center;
+  border: #CCCC 1px solid;
+  cursor: pointer;
+  background-color: #00fa9a
+}
+/*フォーム*/
+.profile_inputContainer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.profile_data_frame {
+    text-align: left;
+}
+
+.profile_introduction {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.profile_input_data {
+    width: 100%;
+}
+
+input {
+    width: 70%;
+}
+
+.profile_submit {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    min-width: 5em;
+}
+
+img {
+    width: 100%;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+label {
+    display: inline-block;
+    min-width: 5em;
+}
+input {
+    width: 70%;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+select {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: field;
+    cursor: default;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
+}
+input {
+    width: 70%;
+}
+input[type="text" i] {
+    padding: 1px 2px;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.submit_message {
+    margin-top: -25px;
 }
 
 
-/*ftre*/
+/*foot*/
 .p-footer__copyright {
     line-height: 1.5;
     padding: 38px 24px 33px;
@@ -104,6 +318,160 @@ li {
     font-size: 10px;
     letter-spacing: 0.1em;
 }
+.container {
+  line-height: 1.5;
+  padding: 38px 24px 33px;
+  text-align: center;
+}
 small {
     font-size: 80%;
 }
+
+
+/*レスポンシブ*/
+
+
+
+
+/* レスポンシブ対応 */
+/*@media screen and (min-width: 900px) {
+
+  /*ウィンドウ幅が720px以上の場合に適用*/
+  /*textarea {
+      width: 87%;
+  }
+
+  .headline {
+      width: 25%;
+      margin: 2em auto 0em auto;
+      font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width: 899px) {
+
+  /*ウィンドウ幅が最大480pxまでの場合に適用*/
+  /*textarea {
+      max-width: 37em;
+  }
+
+  .profile_inputContainer {
+      width: auto;
+      margin-left: 10px;
+  }
+
+  .headline {
+      width: 43%;
+      margin: 2em auto 0em auto;
+      font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /*ウィンドウ幅が最大480pxまでの場合に適用*/
+  /*textarea {
+      max-width: 20em;
+  }
+
+  .profile_inputContainer {
+      width: auto;
+      margin-left: 10px;
+  }
+
+  .p-header_nav_item_link {
+      font-size: 10px;
+  }
+
+  .headline {
+      width: 55%;
+      margin: 2em auto 0em auto;
+      font-size: 1.2em;
+  }
+}
+
+/* レスポンシブ対応 */
+/*@media screen and (min-width: 481px) {
+
+  /*ウィンドウ幅が720px以上の場合に適用*/
+  /*.p-header__inner {
+      background-color: #fff;
+      flex-direction: column;
+      inset: 0;
+      opacity: 0;
+      padding: 136px 16px 40px;
+      position: fixed;
+      transition: opacity 0.4s, visibility 0.4s;
+      visibility: hidden;
+
+  }
+
+  .p-header.is-open .p-header__inner {
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /*ウィンドウ幅が最大480pxまでの場合に適用*/
+  /*img {
+      width: 100%;
+  }
+}
+/*@media not all and (min-width: 768px) {
+    .p-header__inner {
+      background-color: #fff;
+      flex-direction: column;
+      inset: 0;
+      opacity: 0;
+      padding: 136px 16px 40px;
+      position: fixed;
+      transition: opacity 0.4s, visibility 0.4s;
+      visibility: hidden;
+    }
+    .p-header.is-open .p-header__inner {
+      opacity: 1;
+      visibility: visible;
+    }
+    .p-header__nav__list {
+      align-items: center;
+      flex-direction: column;
+    }
+    .p-header__sns {
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .p-fixedLine {
+      left: 0;
+    }
+    .p-fixedLine__link {
+      gap: 8px;
+      justify-content: center;
+    }
+    .p-fixedLine__link__text br {
+      display: none;
+    }
+    .p-line__title {
+      flex-direction: column;
+    }
+    .p-top-hero__inner {
+      flex-direction: column-reverse;
+    }
+    .p-top-hero__body {
+      margin-top: -25px;
+    }
+    .p-top-hero__body__catchcopy br {
+      display: none;
+    }
+    
+    
+    .u-sp-hidden {
+      display: none;
+    }
+    
+    
+  }*/
+  
+    
+    
