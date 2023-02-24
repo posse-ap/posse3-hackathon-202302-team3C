@@ -201,3 +201,31 @@
   font-size: 18px;
   margin-left: 25px;
 }
+
+.p-header__inner {
+  align-items: center;
+  margin-left: auto;
+}
+
+.p-header__nav__list {
+  gap: 32px;
+}
+
+
+@media screen and (min-width: 768px){
+  .p-header__nav__list{
+      display: flex;
+  }}
+
+@media screen and (min-width: 768px){
+.p-header__nav__item__link {
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}}
+
+.p-header__nav__item__link {
+  font-weight: bold;
+  line-height: 1.5;
+  text-decoration: none;
+}
