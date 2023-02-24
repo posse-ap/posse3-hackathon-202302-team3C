@@ -81,13 +81,13 @@ img {
 }
 
 .items-center {
-  width: 90vw;
+  width: 70vw;
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 2rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 1.4rem;
+  grid-row-gap: 2.2rem;
 }
 .img-container {
   position: relative;
