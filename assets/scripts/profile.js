@@ -20,6 +20,23 @@ const favoriteInput = document.querySelector('.favorite_input');
 const sixteenInput = document.querySelector('.sixteen_input');
 
 const local = localStorage;
+const options = [
+  "プログラミング",
+  "料理",
+  "ゲーム",
+  "旅行",
+  "YouTube",
+  "その他",
+];
+
+const select = document.querySelector("select.favorite_input");
+
+options.forEach((option) => {
+  const optionElement = document.createElement("option");
+  optionElement.text = option;
+  select.add(optionElement);
+});
+
 
 let listContent = [];
 submitButton.addEventListener('click', function () {
@@ -40,7 +57,11 @@ submitButton.addEventListener('click', function () {
     local.stor = JSON.stringify(listContent);
     console.log(local.stor)
 
-    if (sixteenInput.value[0] === '指') {
+    if (sixteenInput.value === '指揮官型') {
+
+
+
+
         const profileBox1 = document.querySelector('.introduce_page1')
         const litag = document.createElement('div');
         const ptag = document.createElement('p');
@@ -54,6 +75,7 @@ submitButton.addEventListener('click', function () {
         const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
+
         nameInput.value = '';
         subnameInput.value = '';
         facultyInput.value = '';
@@ -63,13 +85,25 @@ submitButton.addEventListener('click', function () {
         favoriteInput.value = '';
         sixteenInput.value = '';
 
-        ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '<br>' + '診断結果:' + '<span></span>' + sixteenContent ;
+        ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '<br>' + '診断結果:' + '<span></span>' + sixteenContent + '<br>' ;
 
         ptag.setAttribute('class', 'myinf_item')
         litag.setAttribute('class', 'myinf_list')
 
         litag.appendChild(ptag);
         profileBox1.appendChild(litag)
+
+        const favoriteLink = document.createElement('a');
+        if (favoriteContent === options[0]) {
+          favoriteLink.href = '../favorite/programming.html';
+        } else if (favoriteContent === options[2]) {
+          favoriteLink.href = 'index.html';
+        } else {
+          favoriteLink.href = '#'; // デフォルトはページ内リンク
+        }
+        favoriteLink.textContent = favoriteContent;
+            // `favoriteLink`を`<p>`要素内に追加
+        ptag.appendChild(favoriteLink);
 
     }
     else if (sixteenInput.value === '幹部型') {
@@ -913,3 +947,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 })
+
+//! *******************************************
+//! 猪瀬雄大が作成
+//! ******************************************
+
+
