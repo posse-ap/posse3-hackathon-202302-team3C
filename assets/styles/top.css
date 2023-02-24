@@ -64,7 +64,7 @@ button, input, optgroup, select, textarea {
 *, ::before, ::after {
     border-style: solid;
     border-width: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 .p-header__nav__list {
     gap: 32px;
@@ -104,7 +104,7 @@ svg, img, embed, object, iframe {
 
 /*main*/
 .l-headercontainer {
-    
+
 }
 .container {
   /*margin-left: 450px;*/
@@ -134,7 +134,7 @@ svg, img, embed, object, iframe {
     background: #00bcd4;
     transition: .4s;
   }
-  
+
   .p-tappy {
     background: #1ec7bb;
 
@@ -145,7 +145,7 @@ svg, img, embed, object, iframe {
   font-size: 30px;
   padding-top: 100px;
 }
-.resut 
+.resut
 {
     text-align: center;
   color: black;
@@ -583,11 +583,4 @@ small {
     .u-sp-visible {
       display: none;
     }
-  }
-
-
-
-  /**/
-  .content {
-    display: flex;
   }
