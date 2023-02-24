@@ -1,5 +1,5 @@
 // 生川美羽が作成
-localStorage.clear()
+// localStorage.clear()
 // これがあればローカルストレージ
 $(function () {
   $("#acMenu dt").on("click", function () {
@@ -25,7 +25,7 @@ const options = [
   "ゲーム",
   "旅行",
   "YouTube",
-  "K-pop",
+  "カフェ巡り",
   "その他",
 ];
 const select_hobby = document.querySelector("select.favorite_input");
@@ -343,17 +343,24 @@ submitButton.addEventListener('click', function () {
   //   "ゲーム",
   //   "旅行",
   //   "YouTube",
-  //   "K-pop",
+  //   "カフェ巡り",
   //   "その他",
   // ];
 
   if (favoriteContent === options[0]) {
     favoriteLink.href = '../favorite/programming.html';
   } else if (favoriteContent === options[1]) {
-    favoriteLink.href = '../favorite/programming.html';
-  } else {
-    favoriteLink.href = '#';
+    favoriteLink.href = '../favorite/cooking.html';
+  } else if (favoriteContent === options[2]) {
+    favoriteLink.href = '../favorite/game.html';
+  } else if (favoriteContent === options[3]) {
+    favoriteLink.href = '../favorite/travel.html';
+  } else if (favoriteContent === options[4]) {
+    favoriteLink.href = '../favorite/youtube.html';
+  }else if (favoriteContent === options[5]) {
+    favoriteLink.href = '../favorite/cafe.html';
   }
+
   ptag.appendChild(favoriteLink);
 
 favoriteLink.classList.add('my-link');
