@@ -588,4 +588,6 @@ small {
 
 
   /**/
-  
+  .content {
+    display: flex;
+  }
