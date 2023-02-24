@@ -127,6 +127,7 @@ svg, img, embed, object, iframe {
 .p-tappy {
     position: relative;
     font-weight: bold;
+    font-size: 2rem;
     padding: 2em 2em;
     text-decoration: none;
     color: #FFF;
@@ -150,6 +151,7 @@ svg, img, embed, object, iframe {
   color: black;
   font-size: 30px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 /*フォーム*/
 .profile_inputContainer {
@@ -347,7 +349,7 @@ input {
 }
 .container {
   line-height: 1.5;
-  padding: 38px 24px 33px;
+  padding: 0px 24px 33px;
   text-align: center;
 }
 small {
@@ -877,4 +879,10 @@ textarea {
 
 .cotent {
   padding-top: 100px;
+}
+
+
+
+label {
+  text-align: center;
 }
