@@ -606,7 +606,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
