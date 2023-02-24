@@ -9,6 +9,7 @@
     <script src="./assets/scripts/jquery3.6.0.js"></script>
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/profile.css">
+    <link rel="stylesheet" href="../assets/styles/hamburger.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
 </head>
 
@@ -37,13 +38,85 @@
                 <div class="text">
                     <h3 class="content-title">診断結果で自分の心を理解し、自分をより生かそう</h3>
                     <p>
-                        <div class="16link">診断は<a href="https://www.16personalities.com/ja">ここ</a>をクリック</div>
+                    <div class="16link">診断は<a href="https://www.16personalities.com/ja">ここ</a>をクリック</div>
                     </p>
                 </div>
             </div>
         </section>
         <!-- プロフィール -->
         <div class="profile_container">
+            <div class="profile_container">
+
+                <div class="profile_inputContainer">
+                    <h2 class="profile_introduction">プロフィール&診断結果入力</h2>
+                    <!-- ここから受け取る -->
+                    <form action="thanks.html">
+                        <div class="profile_data_frame">
+                            <table class="profile_input_data">
+                                <tr>
+                                    <td><label for="university">＜大学＞</label></td>
+                                    <td><input type="text" name="university" placeholder="○○大学"
+                                            class="university_input"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="grade">＜学年＞</label></td>
+                                    <td>
+                                        <select name="grades" class="grades_input">
+                                            <option>1年</option>
+                                            <option>2年</option>
+                                            <option>3年</option>
+                                            <option>4年</option>
+                                            <option>その他</option>
+                                        </select>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="">＜学部,学科＞</label></td>
+                                    <td><input type="text" name="faculty" placeholder="○学部,○学科" class="faculty_input">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="comment">＜ふりがな＞</label></td>
+                                    <td><input type="text" name="subname" placeholder="やまだたろう" class="subname_input">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="comment">＜名前＞</label></td>
+                                    <td><input type="text" name="name" placeholder="山田太郎" class="name_input"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="favorite">＜趣味＞</label></td>
+                                    <td>
+                                        <select name="favorite" class="favorite_input">
+                                            <option>プログラミング</option>
+                                            <option>料理</option>
+                                            <option>ゲーム</option>
+                                            <option>旅行</option>
+                                            <option>YouTube</option>
+                                            <option>その他</option>
+                                        </select>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="comment">＜診断結果＞</label></td>
+                                    <td><input type="text" name="sixteen" placeholder="指揮官型" class="sixteen_input"></td>
+                                </tr>
+
+                            </table>
+                            <div class="profile_submit">
+                                <input type="button" class="submit_button">
+                                <div class="submit_message">送信</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <div class="box"></div>
             <div class="headline">
                 <p>自己紹介&診断結果一覧</p>
@@ -119,89 +192,9 @@
 
                 </dl>
             </div>
-
-
-            <div class="profile_container">
-
-                <div class="profile_inputContainer">
-                    <div class="profile_introduction">プロフィール&診断結果入力</div>
-                    <!-- ここから受け取る -->
-                    <form action="thanks.html">
-                        <div class="profile_data_frame">
-                            <table class="profile_input_data">
-                                <tr>
-                                    <td><label for="university">＜大学＞</label></td>
-                                    <td><input type="text" name="university" placeholder="○○大学"
-                                            class="university_input"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="grade">＜学年＞</label></td>
-                                    <td>
-                                        <select name="grades" class="grades_input">
-                                            <option>1年</option>
-                                            <option>2年</option>
-                                            <option>3年</option>
-                                            <option>4年</option>
-                                            <option>その他</option>
-                                        </select>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><label for="">＜学部,学科＞</label></td>
-                                    <td><input type="text" name="faculty" placeholder="○学部,○学科" class="faculty_input">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><label for="comment">＜ふりがな＞</label></td>
-                                    <td><input type="text" name="subname" placeholder="やまだたろう" class="subname_input">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td><label for="comment">＜名前＞</label></td>
-                                    <td><input type="text" name="name" placeholder="山田太郎" class="name_input"></td>
-                                </tr>
-
-                                <tr>
-                                    <td><label for="favorite">＜趣味＞</label></td>
-                                    <td>
-                                        <select name="favorite" class="favorite_input">
-                                            <option>1年</option>
-                                            <option>2年</option>
-                                            <option>3年</option>
-                                            <option>4年</option>
-                                            <option>その他</option>
-                                        </select>
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td><label for="comment">＜診断結果＞</label></td>
-                                    <td><input type="text" name="sixteen" placeholder="指揮官型" class="sixteen_input"></td>
-                                </tr>
-
-                            </table>
-                            <div class="profile_submit">
-                                <input type="button" class="submit_button">
-                                <div class="submit_message">送信</div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-
         </div>
 
     </main>
-
-    <footer>
-        <div class="footer_copyright">
-            <small>©2023 POSSE</small>
-        </div>
-    </footer>
     <script src="./assets/scripts/profile.js" defer></script>
 </body>
 
