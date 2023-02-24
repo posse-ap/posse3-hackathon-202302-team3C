@@ -117,7 +117,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -126,7 +126,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -148,7 +148,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -157,7 +157,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -173,13 +173,14 @@ submitButton.addEventListener('click', function () {
         const litag = document.createElement('li');
         const ptag = document.createElement('p');
 
+
         const nameContent = nameInput.value;
         const subnameContent = subnameInput.value;
         const facultyContent = facultyInput.value;
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -188,7 +189,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -210,7 +211,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -219,7 +220,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -241,7 +242,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -250,7 +251,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -272,7 +273,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -281,7 +282,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -303,7 +304,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -312,7 +313,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -334,7 +335,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -343,7 +344,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -365,7 +366,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -374,7 +375,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -396,7 +397,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -405,7 +406,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -427,7 +428,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -436,7 +437,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -458,7 +459,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -467,7 +468,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -498,7 +499,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -520,7 +521,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -529,7 +530,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -551,7 +552,7 @@ submitButton.addEventListener('click', function () {
         const universityContent = universityInput.value;
         // const commentContent = commentInput.value;
         const gradesContent = gradesInput.value;
-        const favoriteContent = favorite.value;
+        const favoriteContent = favoriteInput.value;
         const sixteenContent = sixteenInput.value;
 
         nameInput.value = '';
@@ -560,7 +561,7 @@ submitButton.addEventListener('click', function () {
         universityInput.value = '';
         gradesInput.value = '';
         // commentInput.value = '';
-        favorite.value = '';
+        favoriteInput.value = '';
         sixteenInput.value = '';
 
         ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -665,7 +666,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -695,7 +696,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -725,7 +726,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -755,7 +756,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -784,10 +785,10 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
-            ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
+            ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + FContent + '診断結果:' + '<span></span>' + sixteenContent ;
 
             ptag.setAttribute('class', 'myinf_item')
             litag.setAttribute('class', 'myinf_list')
@@ -814,7 +815,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -845,7 +846,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -875,7 +876,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -905,7 +906,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
@@ -935,7 +936,7 @@ document.addEventListener("DOMContentLoaded", () => {
             universityInput.value = '';
             gradesInput.value = '';
             // commentInput.value = '';
-            favorite.value = '';
+            favoriteInput.value = '';
             sixteenInput.value = '';
 
             ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '診断結果:' + '<span></span>' + sixteenContent ;
