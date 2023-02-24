@@ -134,9 +134,7 @@
   width: 50%;
 }
 
-.hamburger-logo {
-  padding: 24px
-}
+
 
 .hamburger-line-fixed-link {
   align-items: center;
@@ -178,3 +176,10 @@
       display: none;
   }
 }
+
+@media (max-width:768px) {
+  .p-header__nav__list {
+      display: none;
+  }
+}
+
