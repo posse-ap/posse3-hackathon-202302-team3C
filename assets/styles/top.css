@@ -111,7 +111,7 @@ svg, img, embed, object, iframe {
 }
 .p-tappy {
     text-align: center;
-    color: red;
+    /*color: red;*/
     font-weight: bold;
     text-decoration: none;
     padding: 20px 10px 20px;
@@ -122,7 +122,35 @@ svg, img, embed, object, iframe {
   text-align: center;
   border: #CCCC 1px solid;
   cursor: pointer;
-  background-color: #00fa9a
+  /*background-color: #00fa9a*/
+}
+.p-tappy {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 3em 3em;
+    text-decoration: none;
+    color: #FFF;
+    background: #00bcd4;
+    transition: .4s;
+  }
+  
+  .p-tappy {
+    background: #1ec7bb;
+
+  }
+.p-message {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  padding-top: 100px;
+}
+.resut 
+{
+    text-align: center;
+  color: black;
+  font-size: 30px;
+  padding-top: 100px;
 }
 /*フォーム*/
 .profile_inputContainer {
@@ -329,97 +357,7 @@ small {
 
 
 /*レスポンシブ*/
-
-
-
-
-/* レスポンシブ対応 */
-/*@media screen and (min-width: 900px) {
-
-  /*ウィンドウ幅が720px以上の場合に適用*/
-  /*textarea {
-      width: 87%;
-  }
-
-  .headline {
-      width: 25%;
-      margin: 2em auto 0em auto;
-      font-size: 1.6em;
-  }
-}
-
-@media screen and (min-width:481px) and (max-width: 899px) {
-
-  /*ウィンドウ幅が最大480pxまでの場合に適用*/
-  /*textarea {
-      max-width: 37em;
-  }
-
-  .profile_inputContainer {
-      width: auto;
-      margin-left: 10px;
-  }
-
-  .headline {
-      width: 43%;
-      margin: 2em auto 0em auto;
-      font-size: 1.4em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-
-  /*ウィンドウ幅が最大480pxまでの場合に適用*/
-  /*textarea {
-      max-width: 20em;
-  }
-
-  .profile_inputContainer {
-      width: auto;
-      margin-left: 10px;
-  }
-
-  .p-header_nav_item_link {
-      font-size: 10px;
-  }
-
-  .headline {
-      width: 55%;
-      margin: 2em auto 0em auto;
-      font-size: 1.2em;
-  }
-}
-
-/* レスポンシブ対応 */
-/*@media screen and (min-width: 481px) {
-
-  /*ウィンドウ幅が720px以上の場合に適用*/
-  /*.p-header__inner {
-      background-color: #fff;
-      flex-direction: column;
-      inset: 0;
-      opacity: 0;
-      padding: 136px 16px 40px;
-      position: fixed;
-      transition: opacity 0.4s, visibility 0.4s;
-      visibility: hidden;
-
-  }
-
-  .p-header.is-open .p-header__inner {
-      opacity: 1;
-      visibility: visible;
-  }
-}
-
-@media screen and (max-width: 480px) {
-
-  /*ウィンドウ幅が最大480pxまでの場合に適用*/
-  /*img {
-      width: 100%;
-  }
-}
-/*@media not all and (min-width: 768px) {
+@media not all and (min-width: 768px) {
     .p-header__inner {
       background-color: #fff;
       flex-direction: column;
@@ -464,14 +402,185 @@ small {
     .p-top-hero__body__catchcopy br {
       display: none;
     }
-    
-    
+    .p-top-hero__scroll {
+      display: none;
+    }
+    .p-quiz-box__note .u-icon__note {
+      font-size: 17px;
+    }
     .u-sp-hidden {
       display: none;
     }
-    
-    
-  }*/
-  
-    
-    
+  }
+  @media screen and (min-width: 768px) {
+    .l-main {
+      padding-top: 80px;
+    }
+    .l-container {
+      padding: 0 24px;
+    }
+    .l-footer__inner {
+      padding: 56px 24px 48px;
+    }
+    .p-header__logo {
+      width: 148px;
+    }
+    .p-header__button {
+      display: none;
+    }
+    .p-header__inner {
+      align-items: center;
+      margin-left: auto;
+    }
+    .p-header__nav__list {
+      gap: 32px;
+    }
+    .p-header__nav__item__link {
+      color: #666;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+    }
+    .p-header__official {
+      display: none;
+    }
+    .p-header__sns {
+      margin-left: 32px;
+    }
+    .p-footer {
+      margin-top: 80px;
+    }
+    .p-footer__logo {
+      width: 202px;
+    }
+    .p-footer__sns__list {
+      margin-top: 32px;
+    }
+    .p-footer__copyright {
+      line-height: 0.1;
+      padding: 38px 24px 33px;
+    }
+    .p-fixedLine {
+      bottom: 16px;
+      right: 16px;
+    }
+    .p-fixedLine__link {
+      border-radius: 16px;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+      padding: 22px 20px 22px 24px;
+    }
+    .p-fixedLine__link .u-icon__line {
+      font-size: 36px;
+    }
+    .p-fixedLine__link .u-icon__link {
+      margin-left: 35px;
+    }
+    .p-fixedLine__link__text {
+      margin-left: 13px;
+    }
+    .p-heading {
+      font-size: 36px;
+      letter-spacing: 0.05em;
+      line-height: 1.5;
+    }
+    .p-heading__caption {
+      margin-top: 8px;
+    }
+    .p-hero {
+      padding: 110px 0 76px;
+    }
+    .p-hero__title__label {
+      font-size: 18px;
+    }
+    .p-hero__title__inline {
+      font-size: 60px;
+      margin-top: 12px;
+    }
+    .p-line {
+      margin-top: 144px;
+    }
+    .p-line__body {
+      border-radius: 56px;
+      padding: 68px;
+    }
+    .p-line__title {
+      gap: 8px;
+    }
+    .p-line__content {
+      line-height: 1.8;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .p-line__footer {
+      margin-top: 16px;
+    }
+    .p-top-container {
+      margin-top: 96px;
+    }
+    .p-top-hero__body {
+      border-radius: 24px;
+      padding: 50px 62px;
+    }
+    .p-top-hero__body__title {
+      font-size: 16px;
+    }
+    .p-top-hero__body__catchcopy {
+      font-size: 60px;
+      letter-spacing: 0.05em;
+      line-height: 1.3333;
+      margin-top: 10px;
+    }
+    .p-top-hero__image {
+      border-radius: 80px 0 0 80px;
+      margin-left: -125px;
+      margin-right: calc(50% - 50vw);
+      max-height: 680px;
+    }
+    .p-top-about__body {
+      -ms-grid-columns: (1fr)[2];
+      gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 42px;
+    }
+    /*.p-quiz-hero {
+      background-image: url(../assets/img/quiz/bg-hero.jpg);
+    }*/
+    .p-quiz-container {
+      margin-top: 120px;
+    }
+    .p-quiz-box:not(:first-of-type) {
+      margin-top: 120px;
+    }
+    .p-quiz-box__label {
+      font-size: 36px;
+    }
+    .p-quiz-box__question__title__text {
+      font-size: 36px;
+      line-height: 1.5;
+      margin-top: 24px;
+    }
+    .p-quiz-box__question__image {
+      margin-top: 64px;
+    }
+    .p-quiz-box__answer {
+      margin-top: 64px;
+    }
+    .p-quiz-box__answer__list {
+      -ms-grid-columns: (1fr)[3];
+      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .p-quiz-box__answer__button {
+      border-width: 5px;
+      font-size: 18px;
+      padding: 19px;
+    }
+    .p-quiz-box__answer__button .u-icon__arrow {
+      font-size: 16px;
+    }
+    .p-quiz-box__note {
+      font-size: 18px;
+    }
+    .u-sp-visible {
+      display: none;
+    }
+  }
