@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,15 @@
   <link rel="stylesheet" href="../assets/styles/favorite.css">
   <link rel="stylesheet" href="../assets/styles/hamburger.css">
   <script src="../assets/scripts/good.js" defer></script>
+  <script src="../assets/scripts/favorite.js"></script>
   <script src="../assets/scripts/hamburger.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <title>好きなもの一覧</title>
   <!-- <link rel="icon" href="../favicon.ico" /> -->
 </head>
+
 <body>
 
   <header id="js-header" class="l-header p-header">
@@ -83,7 +86,8 @@
     </div>
     <div class="shout-description">
       <p class="shout-paragraph">同じ趣味を持った人が
-        <br>どんな活動をしているか覗いてみよう</p>
+        <br>どんな活動をしているか覗いてみよう
+      </p>
       <!-- <br><a href="#new_favorite" class="new_favorite_form">好きなものを追加したい場合は以下のフォームから連絡してね！</a> -->
     </div>
     <div class="items-center" id="items-container">
@@ -97,9 +101,9 @@
           <h3>プログラミング</h3>
         </a>
         <div class="good_container">
-        <button class="like-button">👍</button>
-        <p class="like-count">0</p>
-      </div>
+          <button class="like-button">👍</button>
+          <p class="like-count">0</p>
+        </div>
       </article>
       <article class="item">
         <a href="../favorite/cooking.html">
@@ -149,10 +153,14 @@
       </article>
     </div>
   </section>
-  <section id="new_favorite">
-    <div>
-  
-    </div>
+  <!-- 追加してほしい趣味 -->
+  <section id="favorite_form">
+    <p>追加して欲しい「趣味」コンテンツ</p>
+    <p>
+      <label>追加したいコンテンツ：<input type="text" id="addContent"></label>
+    </p>
+    <p id="msg2"></p>
   </section>
 </body>
+
 </html>
