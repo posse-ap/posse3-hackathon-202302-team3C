@@ -128,7 +128,7 @@ svg, img, embed, object, iframe {
     position: relative;
     display: inline-block;
     font-weight: bold;
-    padding: 3em 3em;
+    padding: 2em 2em;
     text-decoration: none;
     color: #FFF;
     background: #00bcd4;
@@ -584,3 +584,8 @@ small {
       display: none;
     }
   }
+
+
+
+  /**/
+  
