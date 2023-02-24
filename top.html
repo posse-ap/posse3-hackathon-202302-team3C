@@ -34,33 +34,74 @@
       <nav class="p-header__nav">
         <ul class="p-header__nav__list">
           <li class="p-header__nav__item">
-            <a href="./profile.html" class="p-header__nav__item__link">自己紹介aaa</a>
+            <a href="./profile.html" class="p-header__nav__item__link">自己紹介</a>
           </li>
           <li class="p-header__nav__item">
-            <a href="./favorite.html" class="p-header__nav__item__link">好きなもの一覧</a>
+            <a href="./favorite/favorite.html" class="p-header__nav__item__link">好きなもの一覧</a>
           </li>
         </ul>
       </nav>
-      
+      <div class="hamburger"><span></span><span></span></div>
+
+    
   </header>
 
   <main class="l-main">
     <section class="p-top-hero">
+      
         <div class="slider">
-            <img src="./assets/imgs/IMG_5418.JPG" width="600" height="900" alt="">
-            <img src="./assets/imgs/IMG_5409.JPG" width="600" height="900" alt="">
-            <img src="./assets/imgs/IMG_5411.JPG" width="600" height="900" alt="">
-            <img src="./assets/imgs/IMG_5419.JPG" width="600" height="900" alt="">
+            <img src="./assets/imgs/IMG_5418.JPG" width="100" height="500" alt="">
+            <img src="./assets/imgs/IMG_5409.JPG" width="100" height="500" alt="">
+            <img src="./assets/imgs/IMG_5411.JPG" width="100" height="500" alt="">
+            <img src="./assets/imgs/IMG_5419.JPG" width="100" height="500" alt="">
             </div>
-        <div class="container">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showPrint=0&showTz=0&title=Harbars%E3%80%80%E3%81%8F%E3%82%8B%E6%97%A5&src=YjkwOTc3MzljZmYwODlkYWE4MTFkODRlYmU0YzZkODY0ZjE0ZDFmYjEzOTNlNmQ5ZjZkM2E2ODBjYjVjYTEyYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        
-        </div>
             <div class="p-tappy">
-        <a href="http://tap-py.com/dgic8ot4" class="p-tappy">今月の予定</a>
+              <a href="http://tap-py.com/dgic8ot4" class="p-tappy">今月の予定　ここをクリック</a>
+              </div>
+        <div class="container">
+            <iframe src="https://calendar.google.com/calendar/embed?src=b9097739cff089daa811d84ebe4c6d864f14d1fb1393e6d9f6d3a680cb5ca12b%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
-
+            
       </section>
+      <div class="profile_container">
+
+        <div class="profile_inputContainer">
+            <div class="profile_introduction">メッセージ入力</div>
+            <!-- ここから受け取る -->
+            <form action="thanks.html">
+                <div class="profile_data_frame">
+                    <table class="profile_input_data">
+                        <tr>
+                            <td><label for="university">名前</label></td>
+                            <td><input type="text" name="university" placeholder=""
+                                    class="university_input"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="grade">学年</label></td>
+                            <td>
+                                <select name="grades" class="grades_input">
+                                    <option>3.0</option>
+                                    <option>3.5</option>
+                                    <option>4.0</option>
+                                    <option>その他</option>
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="comment">用件</label></td>
+                            <td><input type="text" name="subname" placeholder="明日一人です。誰か来て〜" class="subname_input">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="profile_submit">
+                        <input type="button" class="submit_button">
+                        <div class="submit_message">送信</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
   </main>
 
   <footer class="l-footer p-footer">
