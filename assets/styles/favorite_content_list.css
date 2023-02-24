@@ -43,69 +43,102 @@ img {
   border-bottom: 5px solid rgb(22, 109, 239);
 }
 
-.slide-container{
+.slide-container {
   display: flex;
   position: relative;
   justify-content: center;
   margin-top: 60px;
 }
 
-.home{
+.home {
   height: 30px;
 }
 
-.back{
+.back {
   height: 30px;
 }
 
 .photo-container {
-	margin:		0;
-  padding:	0;
+  margin: 20%,0,0,0;
+  padding: 0;
   position: relative;
   height: auto;
   width: 100%;
   max-width: 1032px;
 }
 
-.slide{
+.slide {
   position: relative;
 }
 
-.slide img{
+.slide img {
   display: block;
-  animation  : slideAnime 6s ease infinite;
+  animation: slideAnime 6s ease infinite;
   position: absolute;
 }
 
-.slide img:nth-of-type(1) { animation-delay: 0s }
-.slide img:nth-of-type(2) { animation-delay: 3s }
-
-@keyframes slideAnime{
-  0% { opacity: 0 }
-  8% { opacity: 1 }
-  50% { opacity: 1 }
-  58% { opacity: 0 }
-  100% { opacity: 0 }
+.slide img:nth-of-type(1) {
+  animation-delay: 0s
 }
 
-.photo-img{
+.slide img:nth-of-type(2) {
+  animation-delay: 3s
+}
+
+.slide2 {
+  margin-top: 10%;
+}
+
+.description_wrapper,
+.description-title,
+.description-title {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+
+
+@keyframes slideAnime {
+  0% {
+    opacity: 0
+  }
+
+  8% {
+    opacity: 1
+  }
+
+  50% {
+    opacity: 1
+  }
+
+  58% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.photo-img {
   width: 100%;
 }
 
-.text{
-  width:	100%;
-	font-size:	200%;
-	text-align:	center;
-	top: 0%;
-	margin:		0;
-	padding:	0;
-	color:		#fff;
-	background:	rgba(69, 216, 243, 0.7); /* 帯の透明度 */
-	position:	absolute;
+.text {
+  width: 100%;
+  font-size: 200%;
+  text-align: center;
+  top: 0%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #4245f5;
+  /* 帯の透明度 */
+  position: absolute;
   z-index: 12;
 }
 
-.activity-container{
+.activity-container {
   display: block;
   /* position: absolute; */
   /* margin-top: 530px; */
@@ -116,21 +149,112 @@ img {
 }
 
 .invitation_container {
-z-index: 99;
-display: flex;
+  z-index: 99;
+  display: flex;
 }
 
-/* ゲーム投稿 */
-
- @media (min-width: 768px){
-  .activity-container{
-  margin-top: 390px;
+/* ゲーム好きの声 */
+#gameVoice {
+  margin-top: 10%;
+  text-align: center;
 }
- }
 
+#gameVoice .gameContent {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 5%;
+}
 
+#gameVoice img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
 
-.activity-container{
+#gameVoice .gameText {
+  text-align: left;
+}
+
+.game-section-title {
+  text-decoration: underline;
+  font-size:3em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: rgba(69, 216, 243, 0.7);
+	text-shadow: 0.02em 0.02em 0.02em rgba(0,0,0,1);
+}
+
+/* やってほしいリアイベ */
+.profile_introduction {
+  text-decoration: underline;
+}
+
+/* フォームのlabelデザイン */
+.favoriteForm {
+  text-align: center;
+}
+
+.event_submit{
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+.event_submit #cultureText {
+  margin: 0; 
+  padding: 0;
+}
+
+.form-title {
+  text-decoration: underline;
+  font-size:3em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: rgba(69, 216, 243, 0.7);
+	text-shadow: 0.02em 0.02em 0.02em rgba(0,0,0,1);
+}
+
+/* footer */
+.footer{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: solid 2px #eee;
+  background-color: #9fa4aa;
+}
+
+.footer-join {
+  font-size:2em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: #eee;
+	text-shadow: 0.02em 0.02em 0.02em rgba(0,0,0,1);
+}
+
+#posseApp {
+  color: #4245f5;
+  font-size:1em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	text-shadow: 0.02em 0.02em 0.02em rgba(0,0,0,1);
+  margin-top: 5%;
+}
+
+@media (min-width: 768px) {
+  .activity-container {
+    margin-top: 390px;
+  }
+}
+
+.activity-container {
   width: 100%;
   padding: 0 16px;
   position: relative;
@@ -139,58 +263,66 @@ display: flex;
   align-items: center;
 }
 
-.activity-description{
+.activity-description {
   width: 100%;
   max-width: 1032px;
   margin-bottom: 100px;
 }
 
-.description-title{
+.description-title {
   /* display: flex; */
   justify-content: space-between;
   align-items: center;
 }
 
-.headline{
+.headline {
   text-align: center;
   padding-top: 5px;
   border-radius: 20px;
   color: white;
   font-size: 30px;
-  background-color:rgba(69, 216, 243, 0.7);
+  background-color: rgba(69, 216, 243, 0.7);
 }
 
 input[type="checkbox"] {
   display: none;
 }
+
 label {
   position: relative;
   cursor: pointer;
 }
+
 label svg {
   width: 60px;
 }
-input[type="checkbox"] + label svg {
+
+input[type="checkbox"]+label svg {
   fill: #9fa4aa;
   transition: all .3s;
 }
-input[type="checkbox"]:checked + label svg {
+
+input[type="checkbox"]:checked+label svg {
   fill: red;
   animation: like .8s ease-out;
   transition: all .3s;
 }
+
 @keyframes like {
   0% {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
+
   50% {
-    transform: scale(.5,.5);
+    transform: scale(.5, .5);
   }
+
   100% {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
-input[type="checkbox"]:checked + label::after {
+
+input[type="checkbox"]:checked+label::after {
   content: "";
   position: absolute;
   width: 60px;
@@ -202,19 +334,23 @@ input[type="checkbox"]:checked + label::after {
   left: 1px;
   z-index: -100;
 }
+
 @keyframes circle {
   0% {
-    transform: scale(.2,.2);
+    transform: scale(.2, .2);
   }
+
   50% {
-    transform: scale(.5,.5);
+    transform: scale(.5, .5);
   }
+
   80% {
-    transform: scale(1,1);
+    transform: scale(1, 1);
     opacity: .8;
   }
+
   100% {
-    transform: scale(1.3,1.3);
+    transform: scale(1.3, 1.3);
     opacity: 0;
   }
 }
@@ -227,7 +363,7 @@ input[type="checkbox"]:checked + label::after {
   width: 180px;
   height: 50px;
   font-size: 30px;
-  background-color:rgba(69, 216, 243, 0.7);
+  background-color: rgba(69, 216, 243, 0.7);
 }
 
 .reply-button {
@@ -260,12 +396,12 @@ input[type="checkbox"]:checked + label::after {
   display: block;
 }
 
-.reply-content{
+.reply-content {
   width: 100%;
   max-width: 1032px;
 }
 
-.submit-button{
+.submit-button {
   float: right;
 }
 
@@ -274,61 +410,66 @@ input[type="checkbox"]:checked + label::after {
   text-align: center;
   margin-bottom: 20px;
   padding: 10px;
-  background-color: #7289da;
+  background-color: #4245f5;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.discord-invitation a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+}
+
+.discord-link {
+  display: inline-block;
+  width: 100%;
+  font-size: 2em;
+  animation-name: boyoboyo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes boyoboyo {
+  0% {
+    transform: scale(1);
   }
 
-  .discord-invitation a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: blue;
-    text-decoration: none;
+  20% {
+    transform: scale(1.01) rotate(-0.01deg);
   }
 
-  .discord-link {
-    display: inline-block;
-    width: 100%;
-    font-size: 2em;
-    animation-name: boyoboyo;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+  40% {
+    transform: scale(1.02) rotate(0.01deg);
   }
 
-  @keyframes boyoboyo {
-    0% {
-      transform: scale(1);
-    }
-    20% {
-      transform: scale(1.01) rotate(-0.01deg);
-    }
-    40% {
-      transform: scale(1.02) rotate(0.01deg);
-    }
-    60% {
-      transform: scale(1.03) rotate(-0.01deg);
-    }
-    80% {
-      transform: scale(1.02) rotate(0.01deg);
-    }
-    100% {
-      transform: scale(1.01);
-    }
+  60% {
+    transform: scale(1.03) rotate(-0.01deg);
   }
+
+  80% {
+    transform: scale(1.02) rotate(0.01deg);
+  }
+
+  100% {
+    transform: scale(1.01);
+  }
+}
 
 
 
 @media (min-width:768px) {
   .photo-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -343,6 +484,7 @@ a {
   #slideImg1 {
     height: auto;
   }
+
   .description_wrapper {
     height: 100%;
   }

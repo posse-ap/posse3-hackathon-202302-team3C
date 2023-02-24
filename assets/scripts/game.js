@@ -1,3 +1,4 @@
+//生川美羽作成
 function inputChange(event) {
     msg.innerText = cultureText.value + 'をやりたい!';
 }
