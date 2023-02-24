@@ -101,4 +101,11 @@ function test() {
   })
 }
 
+/* favoriteフォーム */
+function inputChange(event){
+  msg2.innerText = '私は「' + addContent.value + '」が好きだから追加して欲しい！';
+}
 
+let addContent = document.getElementById('nameText');
+addContent.addEventListener('change', inputChange);
+let msg2 = document.getElementById('msg2');
