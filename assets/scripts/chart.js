@@ -80,7 +80,7 @@ let options = {
 
     fill: {
 
-        colors: ["#FF1393"],
+        colors: ["#0000FF"],
         type: 'gradient',
         gradient: {
             type: 'vertical',
