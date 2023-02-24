@@ -1,5 +1,6 @@
 // 生川美羽が作成
 localStorage.clear()
+// これがあればローカルストレージ
 $(function () {
   $("#acMenu dt").on("click", function () {
       $(this).next().slideToggle();
@@ -27,14 +28,13 @@ const options = [
   "K-pop",
   "その他",
 ];
-const select = document.querySelector("select.favorite_input");
+const select_hobby = document.querySelector("select.favorite_input");
+const select_type = document.querySelector("select.sixteen_input");
 options.forEach((option) => {
   const optionElement = document.createElement("option");
   optionElement.text = option;
-  select.add(optionElement);
+  select_hobby.add(optionElement);
 });
-
-
 
 // submitButtonのクリックイベント
 let listContent = [];
@@ -66,6 +66,12 @@ const sixteenTypes = [
   '冒険者型', '提唱者型', '擁護者型', '仲介者型',
 ];
 
+sixteenTypes.forEach((type) => {
+  const typeElement = document.createElement("option");
+  typeElement.text = type;
+  select_type.add(typeElement);
+});
+
 if (local.stor) {
   const profiles = JSON.parse(local.stor);
   profiles.forEach((profile) => {
@@ -79,8 +85,11 @@ if (local.stor) {
     litag.setAttribute('class', 'myinf_list');
     litag.appendChild(ptag);
     profileBox.appendChild(litag);
+
+
   });
 }
+
 submitButton.addEventListener('click', function () {
   var myProfile = {
     university: universityInput.value,
@@ -95,7 +104,6 @@ submitButton.addEventListener('click', function () {
   listContent.push(myProfile);
   // 配列をローカルストレージに保存
   localStorage.setItem('stor', JSON.stringify(listContent));
-
   // プロフィールを表示するためのコード
   const index = sixteenTypes.indexOf(sixteenInput.value);
   const profileBox = profileBoxes[index];
@@ -116,16 +124,34 @@ submitButton.addEventListener('click', function () {
   gradesInput.value = '';
   favoriteInput.value = '';
   sixteenInput.value = '';
-
-  ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '<br>' + '診断結果:' + '<span></span>' + sixteenContent + '<br>';
-
   ptag.setAttribute('class', 'myinf_item');
   litag.setAttribute('class', 'myinf_list');
-
   litag.appendChild(ptag);
   profileBox.appendChild(litag);
-
   const favoriteLink = document.createElement('a');
+  ptag.innerHTML = '大学名:' + '<span></span>' + universityContent + '<br>' + '学年:' + '<span></span>' + gradesContent + '<br>' + '学部・学科:' + '<span></span>' + facultyContent + '<br>' + 'ふりがな:' + '<span></span>' + subnameContent + '<br>' + '名前:' + '<span></span>' + nameContent + '<br>' + '趣味:' + '<span></span>' + favoriteContent + '<br>' + '診断結果:' + '<span></span>' + sixteenContent + '<br>';
+  if (sixteenContent === sixteenTypes[0]) {
+    const compatibleTypeLink = document.createElement('a');
+    compatibleTypeLink.href = `#testkun2`;
+    compatibleTypeLink.textContent = `「${sixteenContent}」と相性が良いのは「${sixteenTypes[12]}」です`;
+    const testkunElement = document.getElementById('testkun2');
+    const testkunElement_self = document.getElementById('testkun3');
+    testkunElement.style.color = 'red';
+    testkunElement_self.style.color = 'red';
+    testkunElement_self.classList.add('my-link2');
+    ptag.appendChild(compatibleTypeLink);
+  }
+
+
+
+
+
+
+  ptag.innerHTML += `<br><br><strong>【同じ趣味の人と繋がろう！】</strong><br>`;
+  favoriteLink.innerHTML = favoriteContent;
+
+
+
   if (favoriteContent === options[0]) {
     favoriteLink.href = '../favorite/programming.html';
   } else if (favoriteContent === options[2]) {
@@ -133,6 +159,11 @@ submitButton.addEventListener('click', function () {
   } else {
     favoriteLink.href = '#';
   }
-  favoriteLink.innerHTML = favoriteContent;
-  profileBox.appendChild(favoriteLink);
+  ptag.appendChild(favoriteLink);
+
+favoriteLink.classList.add('my-link');
+  ptag.innerHTML += `<br>↑このリンクをクリック！`;
+
+
 });
+

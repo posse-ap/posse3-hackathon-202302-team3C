@@ -48,7 +48,7 @@ img {
 }
 
 .item {
-  padding: 4rem 0;
+  padding: 1.1rem 0;
 }
 
 .section-title h2 {
@@ -188,4 +188,10 @@ img {
 	text-shadow: 0.02em 0.02em 0.02em rgba(0,0,0,1);
 }
 
+h3{
+  text-align: center;
+}
+.good_container{
+  display: flex;
+}
 
