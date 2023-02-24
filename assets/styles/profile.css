@@ -355,26 +355,14 @@ img {
 }
 
 /* レスポンシブ対応 */
-@media screen and (min-width: 481px) {
 
-    /*ウィンドウ幅が720px以上の場合に適用*/
-    .p-header__inner {
-        background-color: #fff;
-        flex-direction: column;
-        inset: 0;
-        opacity: 0;
-        padding: 136px 16px 40px;
-        position: fixed;
-        transition: opacity 0.4s, visibility 0.4s;
-        visibility: hidden;
 
-    }
 
     .p-header.is-open .p-header__inner {
         opacity: 1;
         visibility: visible;
     }
-}
+
 
 @media screen and (max-width: 480px) {
 
