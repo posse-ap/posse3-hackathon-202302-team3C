@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="../assets/styles/top.css">
   <link rel="stylesheet" href="../assets/styles/hamburger.css">
   <link rel="stylesheet" href="../assets/styles/favorite_content_list.css">
-
 </head>
 
 <body class="p-body">
@@ -36,9 +35,8 @@
 
   <nav class="hamburger-content">
 
-    <div class="hamburger-logo">
-      <img src="../assets/imgs/posse.png" alt="logo">
-    </div>
+  
+    
 
     <ul class="back-menu">
       <li class="hamburger-menu-toppage">
@@ -97,56 +95,104 @@
           <div class="description-title">
             <div class="discord_invitation">
               <h2 class="headline">ゲームが好き同士で遊ぼう!</h2>
-              <a href="https://discord.gg/MqPzP4jh" class="game_form">&nbsp;&nbsp;リアイベ参加願い</a>
+              <a href="#profile_introduction" class="game_form">&nbsp;&nbsp;リアイベ参加願い</a>
             </div>
           </div>
         </div>
       </span>
     </div>
 
-      <!-- ゲーム好きの声 -->
-      <section id="voice" class="wrapper">
-        <h2 class="section-title">ゲーム好きの声</h2>
+    <!-- ゲーム好きの声 -->
+    <section id="voice" class="wrapper">
+      <h2 class="section-title">ゲーム好きの声</h2>
 
-        <div class="item-left inview-balloon">
-          <div class="student">
-            <img src="../assets/imgs/16personal.png" alt="">
-            <p class="name">猪瀬雄大<br>3.0期生</p>
-          </div>
-          <div class="balloon-text">
-            <p>
-              最近switch買いました!<br>
-              マリオカートガチ勢です
-            </p>
-          </div>
+      <div class="item-left inview-balloon">
+        <div class="student">
+          <img src="../" alt="">
+          <p class="name">猪瀬雄大<br>3.0期生</p>
         </div>
-          <div class="student">
-            <img src="img/icon-student2.png" alt="">
-            <p class="name">生川美羽<br>3.0期生</p>
-          </div>
-          <div class="balloon-text">
-            <p>
-              3DSとWiiしか持ってないけど、ゲームは好きです‼<br>
-              ゲームを一緒にしてくれる人を探してます！
-            </p>
-          </div>
+        <div class="balloon-text">
+          <p>
+            最近switch買いました!<br>
+            マリオカートガチ勢です
+          </p>
         </div>
+      </div>
+      <div class="student">
+        <img src="img/icon-student2.png" alt="">
+        <p class="name">生川美羽<br>3.0期生</p>
+      </div>
+      <div class="balloon-text">
+        <p>
+          3DSとWiiしか持ってないけど、ゲームは好きです‼<br>
+          ゲームを一緒にしてくれる人を探してます！
+        </p>
+      </div>
+      </div>
 
-        <div class="item-left inview-balloon">
-          <div class="student">
-            <img src="img/icon-student3.png" alt="">
-            <p class="name">下山美晴<br>3.5期生</p>
-          </div>
-          <div class="balloon-text">
-            <p>
-              ツムツムが好きです‼<br>
-              ハート送ってほしいです! 
-            </p>
-          </div>
+      <div class="item-left inview-balloon">
+        <div class="student">
+          <img src="img/icon-student3.png" alt="">
+          <p class="name">下山美晴<br>3.5期生</p>
         </div>
-      </section>
+        <div class="balloon-text">
+          <p>
+            ツムツムが好きです‼<br>
+            ハート送ってほしいです!
+          </p>
+        </div>
+      </div>
+    </section>
 
-      
+    <!-- アコーディオン -->
+    <div class="acMenu_box">
+      <dl id="acMenu">
+          <dt class="menu_title">3期生</dt>
+          <dd>
+              <div class="introduce_page1"></div>
+          </dd>
+          <dt>4期生</dt>
+          <dd>
+              <div class="introduce_page2"></div>
+          </dd>
+      </dl>
+  </div>
+    <!-- フォーム -->
+    <div class="profile_container">
+      <div class="profile_container">
+        <div class="profile_inputContainer">
+          <h2 class="profile_introduction" id="profile_introduction">やってほしいリアイベ</h2>
+          <!-- ここから受け取る -->
+          <form action="thanks.html">
+            <div class="profile_data_frame">
+              <table class="profile_input_data">
+                <td><label for="grade">＜期生＞</label></td>
+                <td>
+                  <select name="grades" class="grades_input">
+                    <option>1期生</option>
+                    <option>2期生</option>
+                    <option>3期生</option>
+                    <option>全体</option>
+                  </select>
+                </td>
+                </tr>
+                <tr>
+                  <td><label for="comment">＜どんなリアイベをしたいか＞</label></td>
+                  <td><input type="text" name="suggestion" placeholder="○○リアイベがしたい！" class="suggestion_input">
+                  </td>
+                </tr>
+              </table>
+              <div class="profile_submit">
+                <input type="button" class="submit_button">
+                <div class="submit_message">送信</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
 
   </main>
   <script src="../assets/scripts/favorite.js"></script>

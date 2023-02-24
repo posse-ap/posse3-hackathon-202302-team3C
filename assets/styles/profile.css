@@ -129,7 +129,6 @@ a {
 
 .headline p {
     white-space: nowrap;
-    color: black;
 }
 
 /**アコーディオン＊*/
@@ -256,7 +255,6 @@ dd {
 
 .profile_introduction {
     text-align: center;
-    margin-top: 100px;
     font-family: 'Courier New', Courier, monospace;
 }
 
