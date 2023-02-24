@@ -64,6 +64,7 @@
 .hamburger-content.panelactive {
   opacity: 1;
   z-index: 10000;
+  height: 100%;
 }
 /*ナビゲーション*/
 
@@ -228,4 +229,41 @@
   font-weight: bold;
   line-height: 1.5;
   text-decoration: none;
+}
+
+
+/* 例外的に */
+
+.p-header {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  padding: 15px 24px;
+}
+
+.l-header {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+img {
+  max-width: 100%
+}
+.p-header__button {
+  display: none;
+}
+
+p-header__nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

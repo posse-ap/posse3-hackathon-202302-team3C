@@ -483,16 +483,4 @@ img {
 
   .my-link {
     color: blue;
-    font-size: 1.01em;
-    font-weight: bold;
-    position: relative;
-    left: -20px;
-    transition: 0.3s ease-in-out;}
-
-
-
-
-      .my-link:hover {
-        color: #aa1133;
-        left: 0;
-      }
+  }

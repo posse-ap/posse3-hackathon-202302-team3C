@@ -25,9 +25,13 @@
   <link rel="stylesheet" href="./assets/styles/normalize.css">
   <link rel="stylesheet" href="./assets/styles/top.css">
   <link rel="stylesheet" href="./assets/styles/hamburger.css">
+  <link rel="stylesheet" href="./assets/styles/favorite_content_list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <script src="./assets/scripts/top.js"></script>
-  <!-- <script src="./assets/scripts/heart.js"></script> -->
-
 </head>
 
 <body>
@@ -48,8 +52,6 @@
         </ul>
         </ul>
       </nav>
-
-
     </header>
   <div class="hamburger"><span></span><span></span></div>
 
@@ -89,7 +91,7 @@
     </div>
   </nav>
 
-  <main class="l-main">
+  <main class="l-main main_wrapper">
     <section class="p-top-hero">
 
         <div class="slider">
@@ -99,153 +101,37 @@
             <img src="./assets/imgs/IMG_5419.JPG" width="100" height="800" alt="">
             </div>
             <div class="p-tappy">
-              <a href="http://tap-py.com/dgic8ot4" class="p-tappy">👀【tappy】 今月の予定登録　いつHarbarsいく？ ＞＞＞ここをクリック👀</a>
+              <a href="http://tap-py.com/dgic8ot4" class="p-tappy">👀【tappy】 今月の予定を共有しよう！　<br >いつHarbarsいく？一緒にカリキュラム進めよう！<br >＞＞＞<strong class="here">ここ</strong>をクリック👀</a>
               </div>
               <div class="cotent">
+                <h1 class="chart_title">~先月のHarBors訪問人数~</h1>
                 <div class="graph" id="bar-graph">
-                  <h1 class="chart_title">~先月のHarBors訪問人数~</h1>
                       </div>
               </section>
               <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
                 <script src="./assets/scripts/chart.js" defer></script>
           </section>
           <div class="profile_container">
-            <!-- <div class="headline">
-              みんなの声
-            </div>
-            <div class="heart_container">
-            </div>
-            <table class="input_table">
-              <tbody>
-                <tr>
-                  <td class="heart-subname">
-                    <td>
-                      <input type="text" name="name" placeholder="やまだはなこ" class="heart_subname_input">
-                    </td>
-                    </td>
-                </tr>
-                <td class="heart_name">
-                  <label for="heat_name">名前</label>
-                </td>
-                  <td>
-                    <input type="text" name="name" placeholder="山田花子" class="heart_name_input">
-                  </td>
-                  </td>
-                </tr>
-                <td class="heart_comment">
-                  <label for="heart_comment">コメント</label>
-                </td>
-                <td>
-                  <textarea name="" id="" cols="75" rows="25" placeholder="何でも〜"></textarea>
-                </td>
-              </tbody>
-            </table>
-            <input class="heart_submit_button" type="button" value="送信する">
-            <div class="heart_submit"></div>
-            <section class="container">
-              <div class="container_content">
-                <ul class="container_content_date">
-                </ul>
-                <div class="container_content_name"></div>
-                <div class="container_content_detail">
-                  <p class="container_content_detail_ptag"></p>
-                </div>
-                <div class="container_content_btn">
-                  <div class="container_content_comment_btn" id="comment_btn">コメント</div>
-                  <div class="heart_button">
-                    <!-- <button class="heart_button"> -->
-                      <i class="heart-icon">
-                        <!-- <span class="material-icons">favorite</span> -->
-                      </i>
-                    </button>
-                    <!-- "いいね！" -->
-                    <!-- <div class="count_number">0</div>
-                  </div>
-                </div>
-              </div>
-              <div class="past_comment"></div>
-              <div class="container_content_comment_box" id="comment_box"></div>
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="container_content_comment_box_reply" id="comment_reply">
-                    <td class="comment_input" name="" id="" cols="150" rows="10" placeholder="返信する"></textarea>
-                    </td></tr></tbody>
-              </table>
-              <input class="reply_button" type="button" value="返信する">
-            </div>
-            </section> -->
-            <p class="resut">カレンダー</p>
+            <p class="resut">スケジュールカレンダー</p>
           </div>
-        <div class="container"> 
-          <iframe src="https://freecalend.com/open/mem175792_date20230224/wwide" style="border:solid 1px #777" width="1000" height="600" frameborder="0" scrolling="no"></iframe> 
-    
-          <!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showNav=1&showPrint=0&showTz=0&src=YjkwOTc3MzljZmYwODlkYWE4MTFkODRlYmU0YzZkODY0ZjE0ZDFmYjEzOTNlNmQ5ZjZkM2E2ODBjYjVjYTEyYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%233F51B5&color=%230B8043" style="border:solid 1px #777" width="400" height="600" frameborder="0" scrolling="no"></iframe> -->
+        <div class="container">
+          <iframe src="https://freecalend.com/open/mem175792_date20230224/wwide" style="border:solid 1px #777"  frameborder="0" scrolling="no" class="calender" ;></iframe>
             </div>
-            <!-- <div class="graph" id="bar-graph">
-              <h1 class="chart_title">~先月のHarBors訪問人数~</h1>
-                  </div>
-          </section>
-          <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
-            <script src="./assets/scripts/chart.js" defer></script>
-      </section>
-      <div class="profile_container"> -->
 
-        <!-- <input type="text">
-        <input type="text" size="40" value="textbox">
-        <label>名前：<input type="text" size="40" value="textbox"></label>
-        <p id="msg"></p> -->
-        <!-- <label class="m-masseage">みんなへのメッサージ:<input type="text" id="cultureText" ></label>
-      </p>
-        <p id="msg"></p> -->
-
-
-
-        <!-- <div class="profile_inputContainer"> 
-            <div class="profile_introduction">メッセージ入力</div>
-            ここから受け取る
-            <form action="thanks.html">
-                <div class="profile_data_frame">
-                    <table class="profile_input_data">
-                        <tr>
-                            <td><label for="university">名前</label></td>
-                            <td><input type="text" name="university" placeholder=""
-                                     class="university_input"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="grade">学年</label></td>
-                            <td>
-                                <select name="grades" class="grades_input">
-                                    <option>3.0</option>
-                                    <option>3.5</option>
-                                    <option>4.0</option>
-                                    <option>その他</option>
-                                </select>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="comment">用件</label></td>
-                            <td><input type="text" name="subname" placeholder="明日一人です。誰か来て〜" class="subname_input">
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="profile_submit">
-                        <input type="button" class="submit_button">
-                        <div class="submit_message">送信</div> -->
                     </div>
                 </div>
             </form>
         </div>
     </div>
   </main>
-
-  <footer class="l-footer p-footer">
+  <footer>
+    <div class="footer">
+      <p><strong class="footer-join">POSSEアプリで<br>イベントに参加しよう! </strong><br><a href="https://event.posse-ap.com/login" id="posseApp">ここをタップ！</a></p>
+    </div>
     <div class="p-footer__copyright">
-      <small lang="en">©︎2022 POSSE</small>
+      <small lang="en">©︎2023 POSSE</small>
     </div>
   </footer>
-  <!-- /.l-footer .p-footer -->
 
 </body>
 
