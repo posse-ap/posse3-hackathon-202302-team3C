@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自己紹介</title>
-    <link rel="stylesheet" href="./profile.css">
-    <script src="./profile.js" defer></script>
-    <script src="./jquery3.6.0.js"></script>
+    <script src="./assets/scripts/jquery3.6.0.js"></script>
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/profile.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
 </head>
@@ -30,78 +29,90 @@
         </nav>
     </header>
     <main>
+        <!-- 診断 -->
+        <section id="about" class="wrapper">
+            <h2 class="section-title">16personalitiesを診断してみよう!</h2>
+            <div class="content">
+                <img src="./assets/imgs/16personal.png" alt="診断結果１例">
+                <div class="text">
+                    <h3 class="content-title">診断結果で自分の心を理解し、自分をより生かそう</h3>
+                    <p>
+                        <div class="16link">診断は<a href="https://www.16personalities.com/ja">ここ</a>をクリック</div>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- プロフィール -->
         <div class="profile_container">
             <div class="box"></div>
             <div class="headline">
-                <p>POSSE生のプロフィール一覧</p>
+                <p>自己紹介&診断結果一覧</p>
             </div>
 
             <div class="acMenu_box">
                 <dl id="acMenu">
 
-                    <dt class="menu_title">指揮官型</dt>
+                    <dt class="menu_title"><strong>指揮官型</strong></dt>
                     <dd>
                         <div class="introduce_page1"></div>
                     </dd>
-
-
-                    <dt>幹部型</dt>
+                    <dt><strong>幹部型</strong></dt>
                     <dd>
                         <div class="introduce_page2"></div>
                     </dd>
-                    <dt>起業型</dt>
+                    <dt><strong>起業型</strong></dt>
                     <dd>
                         <div class="introduce_page3"></div>
                     </dd>
-                    <dt>管理者型</dt>
+                    <dt><strong>管理者型</strong></dt>
                     <dd>
                         <div class="introduce_page4"></div>
                     </dd>
-                    <dt>建築家型</dt>
+                    <dt><strong>建築家型</strong></dt>
                     <dd>
                         <div class="introduce_page5"></div>
                     </dd>
-                    <dt>主人公型</dt>
+                    <dt><strong>主人公型</strong></dt>
                     <dd>
                         <div class="introduce_page6"></div>
                     </dd>
-                    <dt>領事館型</dt>
+                    <dt><strong>領事官型</strong></dt>
                     <dd>
                         <div class="introduce_page7"></div>
                     </dd>
-                    <dt>巨匠型</dt>
+                    <dt><strong>巨匠型</strong></dt>
                     <dd>
                         <div class="introduce_page8"></div>
                     </dd>
-                    <dt>論理者型</dt>
+                    <dt><strong>論理者型</strong></dt>
                     <dd>
                         <div class="introduce_page9"></div>
                     </dd>
-                    <dt>エンターテイナー型</dt>
+                    <dt><strong>エンターテイナー型</strong></dt>
                     <dd>
                         <div class="introduce_page10"></div>
                     </dd>
-                    <dt>討論型</dt>
+                    <dt><strong>討論者型</strong></dt>
                     <dd>
                         <div class="introduce_page11"></div>
                     </dd>
-                    <dt>広報運動家型</dt>
+                    <dt><strong>広報運動家型</strong></dt>
                     <dd>
                         <div class="introduce_page12"></div>
                     </dd>
-                    <dt>冒険者型</dt>
+                    <dt><strong>冒険者型</strong></dt>
                     <dd>
                         <div class="introduce_page13"></div>
                     </dd>
-                    <dt>提唱型</dt>
+                    <dt><strong>提唱型</strong></dt>
                     <dd>
                         <div class="introduce_page14"></div>
                     </dd>
-                    <dt>擁護者型</dt>
+                    <dt><strong>擁護者型</strong></dt>
                     <dd>
                         <div class="introduce_page15"></div>
                     </dd>
-                    <dt>仲介型</dt>
+                    <dt><strong>仲介型</strong></dt>
                     <dd>
                         <div class="introduce_page16"></div>
                     </dd>
@@ -113,18 +124,18 @@
             <div class="profile_container">
 
                 <div class="profile_inputContainer">
-                    <div class="profile_introduction">プロフィール入力</div>
+                    <div class="profile_introduction">プロフィール&診断結果入力</div>
                     <!-- ここから受け取る -->
                     <form action="thanks.html">
                         <div class="profile_data_frame">
                             <table class="profile_input_data">
                                 <tr>
-                                    <td><label for="university">大学名</label></td>
+                                    <td><label for="university">＜大学＞</label></td>
                                     <td><input type="text" name="university" placeholder="○○大学"
                                             class="university_input"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="grade">学年</label></td>
+                                    <td><label for="grade">＜学年＞</label></td>
                                     <td>
                                         <select name="grades" class="grades_input">
                                             <option>1年</option>
@@ -137,19 +148,38 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label for="">学部・学科</label></td>
-                                    <td><input type="text" name="faculty" placeholder="○学部・○学科"
-                                            class="faculty_input"></td>
+                                    <td><label for="">＜学部,学科＞</label></td>
+                                    <td><input type="text" name="faculty" placeholder="○学部,○学科" class="faculty_input">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><label for="comment">ふりがな</label></td>
+                                    <td><label for="comment">＜ふりがな＞</label></td>
                                     <td><input type="text" name="subname" placeholder="やまだたろう" class="subname_input">
                                     </td>
                                 </tr>
 
                                 <tr>
-                                    <td><label for="comment">名前</label></td>
+                                    <td><label for="comment">＜名前＞</label></td>
                                     <td><input type="text" name="name" placeholder="山田太郎" class="name_input"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="favorite">＜趣味＞</label></td>
+                                    <td>
+                                        <select name="favorite" class="favorite_input">
+                                            <option>1年</option>
+                                            <option>2年</option>
+                                            <option>3年</option>
+                                            <option>4年</option>
+                                            <option>その他</option>
+                                        </select>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="comment">＜診断結果＞</label></td>
+                                    <td><input type="text" name="sixteen" placeholder="指揮官型" class="sixteen_input"></td>
                                 </tr>
 
                             </table>
@@ -172,6 +202,7 @@
             <small>©2023 POSSE</small>
         </div>
     </footer>
+    <script src="./assets/scripts/profile.js" defer></script>
 </body>
 
 </html>

@@ -79,6 +79,42 @@ a {
 }
 
 
+/* 16personalities診断 */
+#about {
+    margin-top: 200px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+#about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#about .text {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    #about .content {
+        flex-direction: column;
+    }
+
+    #about img {
+        margin-right: 0;
+    }
+}
+
 /*ページタイトル*/
 .profile_box {
     height: 4em;
@@ -143,7 +179,7 @@ dd {
     margin: 5% 0 5% 0;
     font-size: 1.2em;
     text-align: left;
-    border: 2px double #9CEC8B;
+    border: 2px double #03d3fc;
     background-color: white;
 }
 
@@ -194,7 +230,7 @@ dd {
     text-align: center;
     border: #CCCC 1px solid;
     cursor: pointer;
-    background-color: #9CEC8B;
+    background-color: #03d3fc;
 }
 
 #acMenu dd {
